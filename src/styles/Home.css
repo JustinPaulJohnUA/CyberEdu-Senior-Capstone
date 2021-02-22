@@ -1,0 +1,65 @@
+.wrapper {
+	z-index: 1;
+	height: 100%;
+}
+
+.homepageHeading {
+	margin-top: 0;
+	font-size: 64px;
+	color: white;
+}
+
+.grid-container {
+	top: 3%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	display: grid;
+	grid-template-columns: 0.7fr 0.7fr 0.7fr 0.7fr;
+	grid-template-rows: 0.7fr 0.7fr 0.7fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		". LogoIcon LogoIcon ."
+		"ToolsIcon LogoIcon LogoIcon ExploreIcon"
+		". LearnIcon DiscoverIcon .";
+}
+
+img {
+	width: 60%;
+}
+
+.LogoIcon {
+	grid-area: LogoIcon;
+}
+
+.LogoIcon img {
+	width: 50%;
+}
+
+.ToolsIcon {
+	grid-area: ToolsIcon;
+	text-align: right;
+}
+
+.ToolsIcon img {
+	justify-self: end;
+}
+
+.LearnIcon {
+	grid-area: LearnIcon;
+	text-align: left;
+}
+
+.DiscoverIcon {
+	grid-area: DiscoverIcon;
+	text-align: right;
+}
+
+.ExploreIcon {
+	grid-area: ExploreIcon;
+	text-align: left;
+}

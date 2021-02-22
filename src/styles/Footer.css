@@ -1,0 +1,12 @@
+.footerWrapper {
+	top: 100%;
+	height: 200px;
+	width: 100%;
+	background-color: #141831a6;
+	position: absolute;
+}
+
+.footer-logo {
+	font-size: 36px;
+	color: white;
+}
