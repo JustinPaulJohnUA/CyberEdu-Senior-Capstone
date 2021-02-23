@@ -1,17 +1,36 @@
 import React, { Component } from 'react'
-import ParticleJS from './ParticleJS.js';
 
+/*LIBRARY COMPONENT IMPORTS*/
+import ParticleJS from './ParticleJS.js';
+import Tippy from '@tippyjs/react';
+import {followCursor} from 'tippy.js';
+
+/*STYLE IMPORTS*/
 import '../styles/Home.css';
+import 'tippy.js/dist/tippy.css';
+import 'tippy.js/animations/scale.css';
+import 'tippy.js/dist/backdrop.css';
+import 'tippy.js/animations/shift-away.css';
+import 'tippy.js/themes/translucent.css';
+
+/*COMPONENT IMPORTS */
+import Footer from '../components/Footer.js';
+import Tooltip from '../components/tooltips/Tooltip.js'
+
+/*ASSET IMPORTS */
 import spywareIcon from '../assets/spyware.svg';
 import hammerIcon from '../assets/hammer.png';
 import mapIcon from '../assets/map.svg';
 import binocularIcon from '../assets/binocular.png';
 import folderIcon from '../assets/folder.png';
 
-import Footer from '../components/Footer.js';
-
 
 export default class Home extends Component {
+
+    componentDidMount() {
+        const script = document.createElement("script")
+    }
+
     render() {
         return (
             <div className='wrapper'>
@@ -21,19 +40,50 @@ export default class Home extends Component {
                         <img src={spywareIcon}></img>
                     </div>
                     <div className="LearnIcon">
-                        <img src={mapIcon} />
+                        <Tippy 
+                        theme="translucent" 
+                        followCursor={true} 
+                        plugins={[followCursor]} 
+                        placement="top" 
+                        animation="scale" 
+                        content={<Tooltip title="Learn" content="Learn more about various topics in Cyber Crime and how to effectively avoid or mitigate them."/>}>
+                            <img src={mapIcon} />
+                        </Tippy>
                     </div>
                     <div className="ExploreIcon">
-                        <img src={binocularIcon} />
+                    <Tippy 
+                        theme="translucent" 
+                        followCursor={true} 
+                        plugins={[followCursor]} 
+                        placement="top" 
+                        animation="scale" 
+                        content={<Tooltip title="Explore" content="Get connected with various Cybersecurity Associations based on location or affiliation."/>}>
+                            <img src={binocularIcon} />
+                        </Tippy>
+                        
                     </div>
                     <div className="ToolsIcon">
-                        <img src={hammerIcon} />
+                        <Tippy 
+                        theme="translucent" 
+                        followCursor={true} 
+                        plugins={[followCursor]} 
+                        placement="top" 
+                        animation="scale" 
+                        content={<Tooltip title="Tools" content="Explore useful tools that will enhance the cybersecurity of your system"/>}>
+                            <img src={hammerIcon} />
+                        </Tippy>
                     </div>
                     <div className="DiscoverIcon">
-                        <img src={folderIcon} />
-                    </div>
-
-                    
+                    <Tippy 
+                        theme="translucent" 
+                        followCursor={true} 
+                        plugins={[followCursor]} 
+                        placement="top" 
+                        animation="scale" 
+                        content={<Tooltip title="Live Feed" content="View cybercrime in realtime or report your own cyber crime to the site."/>}>
+                            <img src={folderIcon} />
+                        </Tippy>
+                    </div> 
                 </div>
                 <Footer />
                 <ParticleJS/>

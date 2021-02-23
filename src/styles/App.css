@@ -1,6 +1,9 @@
 body,
-html {
+html,
+#root,
+.App {
 	margin: 0;
 	padding: 0;
 	background-color: #232741;
+	height: 100%;
 }

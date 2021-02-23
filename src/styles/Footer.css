@@ -1,12 +1,67 @@
-.footerWrapper {
+.footer-wrapper {
 	top: 100%;
-	height: 200px;
+	height: 350px;
 	width: 100%;
 	background-color: #141831a6;
 	position: absolute;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.5fr 0.5fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		"footer-logo-wrapper footer-logo-wrapper footer-logo-wrapper footer-logo-wrapper"
+		"site-map-wrapper licenses-wrapper copyright-wrapper about-us-wrapper";
 }
 
-.footer-logo {
-	font-size: 36px;
+.footer-site-name {
+	font-size: 64px;
 	color: white;
+	margin-bottom: 0;
+	display: inline;
+}
+
+.footer-icon {
+	width: 90px;
+	height: 90px;
+	vertical-align: bottom;
+}
+
+.footer-logo-text {
+	margin-bottom: 1%;
+}
+
+.site-map-header,
+.licenses-header,
+.copyright-header,
+.about-us-header,
+.site-map-ul li,
+.licenses-ul li,
+.copyright-ul li,
+.about-us-ul li {
+	color: white;
+}
+
+.footer-logo-wrapper {
+	grid-area: footer-logo-wrapper;
+}
+
+.site-map-wrapper {
+	grid-area: site-map-wrapper;
+	justify-self: center;
+}
+
+.licenses-wrapper {
+	grid-area: licenses-wrapper;
+	justify-self: center;
+}
+
+.copyright-wrapper {
+	grid-area: copyright-wrapper;
+	justify-self: center;
+}
+
+.about-us-wrapper {
+	grid-area: about-us-wrapper;
+	justify-self: center;
 }

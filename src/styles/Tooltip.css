@@ -1,0 +1,16 @@
+#tooltip-wrapper {
+	width: 300px;
+	height: auto;
+}
+
+#tooltip-title,
+#tooltip-content {
+	text-align: center;
+}
+
+#tooltip-title {
+	margin-top: 0;
+	padding: 4%;
+	background-color: #44475877;
+	color: white;
+}
