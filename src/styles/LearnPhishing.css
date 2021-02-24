@@ -1,0 +1,87 @@
+.topic-content-container {
+	display: grid;
+	position: absolute;
+	top: 10%;
+	width: 100%;
+	height: 90%;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		'topic-icon topic-content-wrapper topic-content-wrapper topic-content-wrapper'
+		'topic-menu-wrapper topic-content-wrapper topic-content-wrapper topic-content-wrapper'
+		'topic-menu-wrapper previous-button . next-button';
+}
+
+.topic-icon {
+	grid-area: topic-icon;
+	align-self: center;
+	justify-self: center;
+	width: 200px;
+	height: 200px;
+}
+
+.topic-menu-wrapper {
+	grid-area: topic-menu-wrapper;
+	justify-self: center;
+	width: 90%;
+	height: 90%;
+	background-color: rgba(151, 150, 150, 0.623);
+	border-radius: 5%;
+}
+
+.topic-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.topic-menu a {
+	display: block;
+	width: 100%;
+	margin: 2% 0;
+	text-align: center;
+	background-color: rgba(61, 61, 61, 0.404);
+}
+
+.topic-content-wrapper {
+	grid-area: topic-content-wrapper;
+}
+
+.topic-content {
+	height: 100%;
+	width: 90%;
+	margin: auto;
+	background-color: rgba(114, 113, 113, 0.404);
+	font-size: 48px;
+	color: white;
+}
+
+.topic-content-title {
+	font-size: 48px;
+	color: white;
+	text-align: center;
+}
+
+.previous-button {
+	grid-area: previous-button;
+	align-self: end;
+	justify-self: center;
+	height: 100px;
+	width: 300px;
+}
+
+.next-button {
+	grid-area: next-button;
+	align-self: end;
+	justify-self: center;
+	height: 100px;
+	width: 300px;
+	text-align: right;
+}
+
+.previous-button button,
+.next-button button {
+	width: 200px;
+	height: 50px;
+}

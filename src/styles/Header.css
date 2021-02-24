@@ -1,0 +1,54 @@
+#header-wrapper {
+	display: flex;
+	position: absolute;
+	width: 100%;
+	background-color: rgba(20, 24, 49, 0.534);
+}
+
+#header-home-logo {
+	width: 50px;
+	height: 50px;
+	padding: 5px;
+}
+
+#header-text {
+	font-size: 24px;
+	color: white;
+}
+
+.img-link-container {
+	margin: 0 5%;
+}
+
+.img-link {
+	width: 400px;
+	height: 400px;
+}
+
+.img-link:hover {
+	border-radius: 50%;
+	box-shadow: 0 0 0 7px #e78267;
+}
+
+#Learn-Home-Topic-Links {
+	position: absolute;
+	width: 100%;
+	top: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-link-title {
+	text-align: center;
+	color: white;
+}
+
+#learn-home-title {
+	position: absolute;
+	width: 100%;
+	top: 8%;
+	color: white;
+	font-size: 64px;
+	text-align: center;
+}
