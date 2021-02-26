@@ -23,10 +23,10 @@
 	grid-template-rows: 1fr 1fr 1fr 1fr;
 	gap: 0px 0px;
 	grid-template-areas:
-		". LogoIcon LogoIcon ."
-		"ToolsIcon LogoIcon LogoIcon ExploreIcon"
-		". LearnIcon DiscoverIcon ."
-		"footer footer footer footer";
+		'. LogoIcon LogoIcon .'
+		'ToolsIcon LogoIcon LogoIcon ExploreIcon'
+		'. LearnIcon DiscoverIcon .'
+		'footer footer footer footer';
 }
 
 img {
@@ -57,6 +57,7 @@ img {
 .ExploreIcon img:hover {
 	border-radius: 50%;
 	box-shadow: 0 0 0 7px #e78267;
+	transition: box-shadow 0.5s;
 }
 
 .LearnIcon {

@@ -15,6 +15,8 @@ import phishingIcon from '../../../assets/phishing.svg';
 import hackerIcon from '../../../assets/hacker.svg';
 import wormIcon from '../../../assets/worm.svg';
 
+/* STYLE IMPORTS */
+import '../../../styles/LearnHome.css';
 
 export default class LearnHome extends Component {
     render() {
