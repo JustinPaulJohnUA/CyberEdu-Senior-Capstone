@@ -3,7 +3,8 @@ import React, { Component } from 'react'
 /*LIBRARY COMPONENT IMPORTS*/
 import ParticleJS from './ParticleJS.js';
 import Tippy from '@tippyjs/react';
-import {followCursor} from 'tippy.js';
+import { followCursor } from 'tippy.js';
+import { Link } from 'react-router-dom';
 
 /*STYLE IMPORTS*/
 import '../styles/Home.css';
@@ -26,11 +27,6 @@ import folderIcon from '../assets/folder.png';
 
 
 export default class Home extends Component {
-
-    componentDidMount() {
-        const script = document.createElement("script")
-    }
-
     render() {
         return (
             <div className='wrapper'>
@@ -46,8 +42,11 @@ export default class Home extends Component {
                         plugins={[followCursor]} 
                         placement="top" 
                         animation="scale" 
-                        content={<Tooltip title="Learn" content="Learn more about various topics in Cyber Crime and how to effectively avoid or mitigate them."/>}>
-                            <img src={mapIcon} />
+                            content={<Tooltip title="Learn" content="Learn more about various topics in Cyber Crime and how to effectively avoid or mitigate them." />}>
+                            <Link to="/learn">
+                                <img src={mapIcon} />
+                            </Link>
+                            
                         </Tippy>
                     </div>
                     <div className="ExploreIcon">
@@ -57,8 +56,11 @@ export default class Home extends Component {
                         plugins={[followCursor]} 
                         placement="top" 
                         animation="scale" 
-                        content={<Tooltip title="Explore" content="Get connected with various Cybersecurity Associations based on location or affiliation."/>}>
-                            <img src={binocularIcon} />
+                            content={<Tooltip title="Explore" content="Get connected with various Cybersecurity Associations based on location or affiliation." />}>
+                            <Link to="/associations">
+                                <img src={binocularIcon} />
+                            </Link>
+                            
                         </Tippy>
                         
                     </div>
@@ -69,8 +71,11 @@ export default class Home extends Component {
                         plugins={[followCursor]} 
                         placement="top" 
                         animation="scale" 
-                        content={<Tooltip title="Tools" content="Explore useful tools that will enhance the cybersecurity of your system"/>}>
-                            <img src={hammerIcon} />
+                            content={<Tooltip title="Tools" content="Explore useful tools that will enhance the cybersecurity of your system" />}>
+                            <Link to="/tools">
+                                <img src={hammerIcon} />
+                            </Link>
+                            
                         </Tippy>
                     </div>
                     <div className="DiscoverIcon">
@@ -80,8 +85,10 @@ export default class Home extends Component {
                         plugins={[followCursor]} 
                         placement="top" 
                         animation="scale" 
-                        content={<Tooltip title="Live Feed" content="View cybercrime in realtime or report your own cyber crime to the site."/>}>
-                            <img src={folderIcon} />
+                            content={<Tooltip title="Live Feed" content="View cybercrime in realtime or report your own cyber crime to the site." />}>
+                            <Link to="/data">
+                                <img src={folderIcon} />
+                            </Link>
                         </Tippy>
                     </div> 
                 </div>
