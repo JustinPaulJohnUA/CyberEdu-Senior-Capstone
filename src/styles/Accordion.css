@@ -1,0 +1,29 @@
+.accordion-wrapper {
+	width: 100%;
+}
+.accordion {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	width: 100%;
+	padding: 18px;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+	background-color: #ccc;
+}
+
+.panel {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	display: none;
+	transition: max-height 0.2s ease-out;
+	display: block;
+}

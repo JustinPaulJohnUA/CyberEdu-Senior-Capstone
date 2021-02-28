@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 /*LIBRARY COMPONENT IMPORTS*/
 import ParticleJS from '../../ParticleJS.js';
+import { Link } from 'react-router-dom';
 
 /*COMPONENT IMPORTS */
 import Footer from '../../Footer.js';
@@ -32,7 +33,10 @@ export default class LearnHome extends Component {
                         content={<Tooltip title="Heads Up" content="Phishing involves scamming or impersonating others over email, chat or phone in order to steal someone's money, data, or credentials. Click on the icon to learn more."/>}>
                         <div className="img-link-container">
                             <h2 className="img-link-title">Phishing</h2>
-                            <img className="img-link" src={phishingIcon} />
+                            <Link to="/learn/phishing">
+                                <img className="img-link" src={phishingIcon} />
+                            </Link>
+                            
                         </div>
                     </Tippy>
 
@@ -43,7 +47,9 @@ export default class LearnHome extends Component {
                         content={<Tooltip title="Heads Up" content="Social Engineering involves tricking users into trusting cyver criminals (both online and in-person). Click the icon above to learn more."/>}>
                         <div className="img-link-container">
                             <h2 className="img-link-title">Social Engineering</h2>
-                            <img className="img-link" src={hackerIcon} />
+                            <Link to="/learn/social-engineering">
+                                <img className="img-link" src={hackerIcon} />
+                            </Link>
                         </div>
                     </Tippy>
 
@@ -54,7 +60,9 @@ export default class LearnHome extends Component {
                         content={<Tooltip title="Heads Up" content="Malware is 'Malicious Software' that is designed to damage or steal data from a user's system. Click the icon about to learn more." />}>
                         <div className="img-link-container">
                             <h2 className="img-link-title">Malware</h2>
-                            <img className="img-link" src={ wormIcon }/>
+                            <Link to="/learn/malware">
+                                <img className="img-link" src={ wormIcon }/>
+                            </Link>
                         </div>
                     </Tippy>
 

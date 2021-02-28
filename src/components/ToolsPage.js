@@ -6,6 +6,7 @@ import ParticleJS from './ParticleJS.js';
 /*COMPONENT IMPORTS */
 import Footer from './Footer.js';
 import Header from './navigation/Header.js';
+import PasswordGenerator from '../components/PasswordGenerator.js';
 import Tooltip from './tooltips/Tooltip.js';
 import Tippy from '@tippyjs/react';
 import {followCursor} from 'tippy.js';
@@ -18,27 +19,36 @@ export default class ToolsPage extends Component {
         return (
             <div>
                 <Header />
-                <div id="tools-page-content-wrapper">
-                    <div id="password-generator-wrapper">
-                        <h2 className="tools-page-section-header">Password Generator</h2>
-                        <div className="password-content">
-                            Coming Soon!
-                        </div>
+                <div className="tools-page-content-wrapper">
+                    <div className="password-generator-applet-wrapper">
+                        <PasswordGenerator />
                     </div>
-                    <div id="encrypt-file-generator-wrapper">
-                        <h2 className="tools-page-section-header">Encrypt File</h2>
-                        <div className="encrypt-content">
-                            Coming Soon!
-                        </div>
+                    <div className="password-generator-title-wrapper">
+                        <h2 className="paswword-generator-title">Password Generator</h2>
                     </div>
-                    <div id="resources-wrapper">
-                        <h2 className="tools-page-section-header">Resources</h2>
-                        <div className="resources-content">
-                            Make this a grid, change the scrollbar to the right to look nicer
-                        </div>
+                    <div className="password-generator-description-wrapper">
+                        <p>Using a strong and diverse password on any website you sign up for is one the best ways to upkeep your business or personal cybersecurity.</p>
+                        <ul>
+                            <li>Enter a password length from 4 to 20</li>
+                            <li>Select your desired password-characters</li>
+                            <li>Click the "generate password" button</li>
+                            <li>Click the clipboard button to copy the generated password</li>
+                            <li>Store your password in a secure place, such as a password manager</li>
+                        </ul>
                     </div>
-
+                    <div className="file-encrypt-applet-wrapper">
+                        
+                    </div>
+                    <div className="file-encrypt-title-wrapper">
+                        <h2 className="file-encrypt-title">Encrypt File</h2>
+                    </div>
+                    <div className="file-encrypt-description-wrapper"></div>
+                    <div className="resources-title-wrapper">
+                        <h2 className="resources-title">Resources</h2>
+                    </div>
+                    <div class="resources-content-wrapper"></div>
                 </div>
+
                 <Footer />
                 <ParticleJS />
             </div>

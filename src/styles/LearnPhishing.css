@@ -44,6 +44,23 @@
 	background-color: rgba(61, 61, 61, 0.404);
 }
 
+.text-content-wrapper {
+	border-bottom: solid black 4px;
+}
+
+.text-content {
+	height: 100%;
+	width: 90%;
+	margin: auto;
+	background-color: rgba(114, 113, 113, 0.404);
+	font-size: 48px;
+	color: white;
+}
+
+.text-content-title {
+	text-align: center;
+}
+
 .topic-content-wrapper {
 	grid-area: topic-content-wrapper;
 }
@@ -55,6 +72,7 @@
 	background-color: rgba(114, 113, 113, 0.404);
 	font-size: 48px;
 	color: white;
+	overflow-y: scroll;
 }
 
 .topic-content-title {
