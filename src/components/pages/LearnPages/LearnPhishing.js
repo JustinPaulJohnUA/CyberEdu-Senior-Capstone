@@ -3,7 +3,9 @@ import React, { Component } from 'react'
 /*LIBRARY COMPONENT IMPORTS*/
 import ParticleJS from '../../ParticleJS.js';
 import Tippy from '@tippyjs/react';
-import {followCursor} from 'tippy.js';
+import { followCursor } from 'tippy.js';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 
 /*COMPONENT IMPORTS */
 import Footer from '../../Footer.js';
@@ -35,9 +37,9 @@ export default class LearnPhishing extends Component {
                     <div className="topic-menu-wrapper">
                         <div className="topic-menu">
                             <h3>Navigation</h3>
-                            <Accordion title="email" />
-                            <Accordion title="phone"/>
-                            <Accordion title="online"/>
+                            <Accordion title="Email" />
+                            <Accordion title="Vishing"/>
+                            <Accordion title="Spear"/>
                         </div>
                     </div>
                     <div className="topic-content-wrapper">
@@ -77,10 +79,10 @@ export default class LearnPhishing extends Component {
                         </div>
                     </div>
                     <div className="previous-button">
-                        <button>Replace with an Arrow</button>
+                        <button>Previous Section</button>
                     </div>
                     <div className="next-button">
-                        <button>Replace with an Arrow</button>
+                        <button>Next Section</button>
                     </div>
                 </div>
                 <Footer />

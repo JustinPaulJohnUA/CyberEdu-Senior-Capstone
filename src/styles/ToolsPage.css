@@ -1,124 +1,121 @@
-/* #tools-page-content-wrapper {
+.tools-page-content-wrapper {
 	position: absolute;
-	top: 7%;
+	top: 10%;
 	width: 100%;
 	height: 90%;
 	display: flex;
 	flex-direction: column;
-	overflow: scroll;
-	overflow-x: hidden;
+	overflow: auto;
 }
 
-.tools-page-section-header,
-.encrypt-file-generator-wrapper,
-.tools-page-section-header {
-	color: white;
-	font-size: 64px;
-	margin: 2% 5%;
-}
+/* PASSWORD GENERATOR STYLES START*/
 
-.resources-content,
-.encrypt-content,
-.password-content {
-	margin: 0 7%;
-	width: 85%;
-	height: 100px;
-	background-color: rgba(114, 113, 113, 0.404);
-}
-
-.password-content p {
-	color: white;
-}
-
-.resources-content {
-	height: 500px;
-} */
-
-.tools-page-content-wrapper {
+.password-generator-wrapper {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.25fr 1fr;
 	gap: 0px 0px;
 	grid-template-areas:
-		'password-generator-title-wrapper password-generator-title-wrapper password-generator-applet-wrapper password-generator-applet-wrapper'
-		'password-generator-description-wrapper password-generator-description-wrapper password-generator-applet-wrapper password-generator-applet-wrapper'
-		'file-encrypt-title-wrapper file-encrypt-title-wrapper file-encrypt-applet-wrapper file-encrypt-applet-wrapper'
-		'file-encrypt-description-wrapper file-encrypt-description-wrapper file-encrypt-applet-wrapper file-encrypt-applet-wrapper'
-		'resources-title-wrapper resources-title-wrapper resources-title-wrapper resources-title-wrapper'
-		'resources-content-wrapper resources-content-wrapper resources-content-wrapper resources-content-wrapper';
-
-	position: absolute;
-	top: 7%;
-	width: 100%;
-	height: 90%;
-	overflow: scroll;
-	overflow-x: hidden;
+		'password-generator-title password-generator-title password-generator-applet password-generator-applet'
+		'password-generator-description password-generator-description password-generator-applet password-generator-applet';
+	justify-items: center;
+	padding-bottom: 2%;
+	width: 90%;
+	margin: auto;
+	border-bottom: rgba(128, 128, 128, 0.5) 5px solid;
 }
-
-.password-generator-applet-wrapper {
-	grid-area: password-generator-applet-wrapper;
-	justify-self: center;
-}
-
-.password-generator-title-wrapper {
-	grid-area: password-generator-title-wrapper;
-}
-
-.password-generator-description-wrapper {
-	grid-area: password-generator-description-wrapper;
-	justify-self: center;
-	width: 80%;
-}
-
-.file-encrypt-applet-wrapper {
-	grid-area: file-encrypt-applet-wrapper;
-}
-
-.file-encrypt-title-wrapper {
-	grid-area: file-encrypt-title-wrapper;
-}
-
-.file-encrypt-description-wrapper {
-	grid-area: file-encrypt-description-wrapper;
-}
-
-.resources-title-wrapper {
-	grid-area: resources-title-wrapper;
-}
-
-.resources-content-wrapper {
-	grid-area: resources-content-wrapper;
-}
-
-.paswword-generator-title,
-.file-encrypt-title,
-.resources-title {
+.password-generator-title {
+	grid-area: password-generator-title;
 	color: white;
 	font-size: 48px;
+	margin-top: 0%;
+	margin-bottom: 0%;
 }
-
-.password-generator-title-wrapper,
-.file-encrypt-title-wrapper {
-	justify-self: center;
-}
-
-.password-generator-description-wrapper {
-	color: white;
+.password-generator-description {
+	grid-area: password-generator-description;
 	text-align: center;
-	font-size: 24px;
+	width: 60%;
+	color: white;
+	font-size: 18px;
+	margin-top: 0%;
+}
+.password-generator-wrapper ol {
+	text-align: left;
+}
+.password-generator-wrapper li {
+	margin-top: 2%;
 }
 
-.password-generator-description-wrapper p {
-	margin: 0;
+.password-generator-applet {
+	grid-area: password-generator-applet;
+	background-color: #23235b;
+	box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+	width: 500px;
+	max-width: 100%;
+	padding: 5%;
+}
+/* PASSWORD GENERATOR STYLES END*/
+
+/* FILE ENCRYPTER STYLES START*/
+.file-encrypter-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.25fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		'file-encrypter-title file-encrypter-title file-encrypter-applet file-encrypter-applet'
+		'file-encrypter-description file-encrypter-description file-encrypter-applet file-encrypter-applet';
+	justify-items: center;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	width: 90%;
+	margin: auto;
+	border-bottom: rgba(128, 128, 128, 0.5) 5px solid;
+}
+.file-encrypter-title {
+	grid-area: file-encrypter-title;
+	color: white;
+	font-size: 48px;
+	margin-top: 0%;
+	margin-bottom: 0%;
+}
+.file-encrypter-description {
+	grid-area: file-encrypter-description;
+	text-align: center;
+	width: 60%;
+	color: white;
+	font-size: 18px;
+	margin-top: 0%;
+}
+.file-encrypter-applet {
+	grid-area: file-encrypter-applet;
+	background-color: #23235b;
+	box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+	width: 500px;
+	height: 440px;
+	max-width: 100%;
+	padding: 5%;
+}
+/* FILE ENCRYPTER STYLES END*/
+
+/*EXTERNAL TOOLS STYLES START*/
+.tools-resources-wrapper {
+	display: flex;
+	flex-direction: column;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	width: 90%;
+	margin: auto;
 }
 
-.resources-title {
-	padding: 2% 3%;
+.tools-resources-title {
+	font-size: 48px;
+	color: white;
+	margin-top: 0;
 }
 
-.file-encrypt-applet-wrapper {
-	justify-self: center;
-	align-self: start;
-	width: 100%;
-	height: 100%;
+.tools-resources-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 }

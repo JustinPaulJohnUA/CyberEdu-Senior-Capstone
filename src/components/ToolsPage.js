@@ -7,9 +7,9 @@ import ParticleJS from './ParticleJS.js';
 import Footer from './Footer.js';
 import Header from './navigation/Header.js';
 import PasswordGenerator from '../components/PasswordGenerator.js';
-import Tooltip from './tooltips/Tooltip.js';
-import Tippy from '@tippyjs/react';
-import {followCursor} from 'tippy.js';
+import FileEncrypter from '../components/FileEncrypter.js'
+import Card from '../components/Card.js'
+import ToolsPageText from "../assets/ToolsPageAssets/text/ToolsPageText.json"
 
 /* STYLE IMPORTS*/
 import '../styles/ToolsPage.css'
@@ -20,33 +20,54 @@ export default class ToolsPage extends Component {
             <div>
                 <Header />
                 <div className="tools-page-content-wrapper">
-                    <div className="password-generator-applet-wrapper">
-                        <PasswordGenerator />
+                    <div className="password-generator-wrapper">
+                        <h2 className="password-generator-title">Password Generator</h2>
+                        <div className="password-generator-description">
+                            Create a psuedo-random password string of 4 - 20 characters. Randomly generated passwords are a great way to practice cybersecurity on only level, as they are harder to crack by software. Store the password in a password manager for further security. 
+                            <ol>
+                                <li>Enter a password length from 4 to 20</li>
+                                <li>Select your desired password-characters</li>
+                                <li>Click the "generate password" button</li>
+                                <li>Click the clipboard button to copy the generated password</li>
+                                <li>Store your password in a secure place, such as a password manager</li>
+                            </ol>
+                        </div>
+                        <div className="password-generator-applet">
+                            <PasswordGenerator />
+                        </div>
                     </div>
-                    <div className="password-generator-title-wrapper">
-                        <h2 className="paswword-generator-title">Password Generator</h2>
+                    <div className="file-encrypter-wrapper">
+                        <h2 className="file-encrypter-title">File Encrypter</h2>
+                        <p className="file-encrypter-description">
+                            Encrypt a file via AES encryption. Your file will be converted into a hashed-string based on a secret password (a key) that you provide. Use the key to decrypt your file back to its original composition.
+                        </p>
+                        <div className="file-encrypter-applet">
+                            <FileEncrypter />
+                        </div>
                     </div>
-                    <div className="password-generator-description-wrapper">
-                        <p>Using a strong and diverse password on any website you sign up for is one the best ways to upkeep your business or personal cybersecurity.</p>
-                        <ul>
-                            <li>Enter a password length from 4 to 20</li>
-                            <li>Select your desired password-characters</li>
-                            <li>Click the "generate password" button</li>
-                            <li>Click the clipboard button to copy the generated password</li>
-                            <li>Store your password in a secure place, such as a password manager</li>
-                        </ul>
-                    </div>
-                    <div className="file-encrypt-applet-wrapper">
-                        
-                    </div>
-                    <div className="file-encrypt-title-wrapper">
-                        <h2 className="file-encrypt-title">Encrypt File</h2>
-                    </div>
-                    <div className="file-encrypt-description-wrapper"></div>
-                    <div className="resources-title-wrapper">
-                        <h2 className="resources-title">Resources</h2>
-                    </div>
-                    <div class="resources-content-wrapper"></div>
+                    <div className="tools-resources-wrapper">
+                        <h2 className="tools-resources-title">External Tools</h2>
+                        <div className="tools-resources-content">
+                            <Card
+                                title={ToolsPageText.bitwarden.title}
+                                img={ToolsPageText.bitwarden.img}
+                                link={ToolsPageText.bitwarden.link}
+                                description={ToolsPageText.bitwarden.description}
+                            />
+                            <Card
+                                title={ToolsPageText.antivirus.title}
+                                img={ToolsPageText.antivirus.img}
+                                link={ToolsPageText.antivirus.link}
+                                description={ToolsPageText.antivirus.description}
+                            />
+                            <Card
+                                title={ToolsPageText.vpn.title}
+                                img={ToolsPageText.vpn.img}
+                                link={ToolsPageText.vpn.link}
+                                description={ToolsPageText.vpn.description}
+                            />
+                        </div>
+                    </div>  
                 </div>
 
                 <Footer />

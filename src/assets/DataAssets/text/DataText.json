@@ -1,0 +1,27 @@
+{
+    "kaspersky-map": "Placeholder Text",
+    "education": {
+        "img": "../graphs/Distribution of Attacks Among Education.png",
+        "description": "Chris 1"
+    },
+    "healthcare": {
+        "img": "../graphs/Distribution of Attacks Among Healthcare.png",
+        "description": "Chris 2"
+    },
+    "individuals": {
+        "img": "../graphs/Distribution of Attacks Among Individuals.png",
+        "description": "Chris 3"
+    },
+    "industries": {
+        "img": "../graphs/Distribution of Attacks Among Multiple Industries.png",
+        "description": "Chris 4"
+    },
+    "public": {
+        "img": "../graphs/Distribution_of_Cybercrimes.png",
+        "description": "Chris 5"
+    },
+    "targets": {
+        "img": "../graphs/Distribution_of_Targets.png",
+        "description": "Chris 6"
+    }
+}

@@ -67,7 +67,7 @@ export default function PasswordGenerator() {
     }
 
     return (
-        <div className="password-generator-applet">
+        <div className="password-generator-applet-main">
             <h2 className="password-generator-applet-title">Password Generator</h2>
             <div className="result-container">
                 <span ref={ passwordResultRef } className="generated-password"></span>
@@ -78,7 +78,7 @@ export default function PasswordGenerator() {
             <div className="settings">
                 <div className="setting">
                     <label>Password Length</label>
-                    <input ref={ lengthRef } type="number" id="passwordLength" min="4" max="20" value="20"/>
+                    <input ref={ lengthRef } type="number" id="passwordLength" min="4" max="20"/>
                 </div>
 
                 <div className="setting">

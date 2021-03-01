@@ -7,11 +7,11 @@
 
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 0.5fr 0.5fr;
+	grid-template-rows: 0.25fr 0.5fr;
 	gap: 0px 0px;
 	grid-template-areas:
-		"footer-logo-wrapper footer-logo-wrapper footer-logo-wrapper footer-logo-wrapper"
-		"site-map-wrapper licenses-wrapper copyright-wrapper about-us-wrapper";
+		'footer-logo-wrapper footer-logo-wrapper footer-logo-wrapper footer-logo-wrapper'
+		'site-map-wrapper licenses-wrapper copyright-wrapper about-us-wrapper';
 }
 
 .footer-site-name {
@@ -19,6 +19,7 @@
 	color: white;
 	margin-bottom: 0;
 	display: inline;
+	margin-left: 1%;
 }
 
 .footer-icon {
@@ -42,8 +43,26 @@
 	color: white;
 }
 
+.site-map-header,
+.licenses-header,
+.copyright-header,
+.about-us-header {
+	text-align: center;
+}
+
+.site-map-ul,
+.licenses-ul,
+.copyright-ul,
+.about-us-ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
 .footer-logo-wrapper {
 	grid-area: footer-logo-wrapper;
+	margin: 1%;
 }
 
 .site-map-wrapper {

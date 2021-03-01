@@ -1,21 +1,24 @@
 #data-page-wrapper {
 	position: absolute;
-	top: 7%;
-	margin: auto;
-	width: 100%;
+	top: 10%;
+	margin: 0 auto;
+	width: 90%;
 	height: 90%;
 	display: flex;
-	align-items: center;
-	justify-items: center;
-	text-align: center;
+	flex-direction: column;
+	overflow-y: scroll;
 }
 
-#live-map-wrapper {
-	margin: 0 5%;
+#data-page-wrapper::-webkit-scrollbar {
+	width: 24px;
 }
 
-#live-map-description {
-	color: white;
-	font-size: 32px;
-	margin: 0 5%;
+#data-page-wrapper::-webkit-scrollbar-track {
+	background-color: #4f67ff;
+	border-radius: 5px;
+}
+
+#data-page-wrapper::-webkit-scrollbar-thumb {
+	background: #314aeb;
+	border-radius: 5px;
 }

@@ -2,8 +2,8 @@
 	width: 100%;
 }
 .accordion {
-	background-color: #eee;
-	color: #444;
+	background-color: #1b1f38;
+	color: white;
 	cursor: pointer;
 	width: 100%;
 	padding: 18px;
@@ -26,4 +26,5 @@
 	display: none;
 	transition: max-height 0.2s ease-out;
 	display: block;
+	color: black;
 }

@@ -1,0 +1,20 @@
+{
+    "bitwarden": {
+        "title": "Bitwarden",
+        "link": "https://bitwarden.com/",
+        "img": "https://bitwarden.com/images/social-banner.png",
+        "description": "Bitwarden is an open source password manager for personal or busines use. Data is encrypted locally on your device, rather than on a cloud-server, so your data is safe from any potential attacks that Bitwarden as a company might face!"
+    },
+    "antivirus": {
+        "title": "Malwarebytes",
+        "link": "https://www.malwarebytes.com/",
+        "img": "https://blog.malwarebytes.com/wp-content/uploads/2016/02/new-malwarebytes-icon-dark.png",
+        "description": "A popular anti-malware softare for most modern operating systems. Helps protect you against various types of malware by scanning your PC and webrowser for active or potential threats."
+    },
+    "vpn": {
+        "title": "Express VPN",
+        "link": "https://www.expressvpn.com/",
+        "img": "https://cnet3.cbsistatic.com/img/h3VQuLD2VEZFCDBRkwEeUR0U5k4=/1200x630/2021/01/19/6525e82f-c20c-477d-b8c4-26d5f06be6aa/expressvpn-vertical-logo-white-on-red.png",
+        "description": "A popular VPN for spoofing your IP Address. You can use this to hide your internet traffic and remain anonymous online."
+    }
+}

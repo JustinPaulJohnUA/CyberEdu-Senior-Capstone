@@ -6,6 +6,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	overflow-y: scroll;
 }
 
 .associations-page-title-wrapper {
@@ -36,20 +37,11 @@
 }
 
 .associations-page-content-wrapper {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	gap: 0px 0px;
-	width: 70%;
-	margin-top: 2%;
-	height: 90%;
-	overflow-y: scroll;
-	grid-template-areas:
-		'. . . .'
-		'. . . .';
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 .associations-page-content-wrapper div {
-	background-color: rgba(114, 113, 113, 0.404);
 	margin: 1%;
 }

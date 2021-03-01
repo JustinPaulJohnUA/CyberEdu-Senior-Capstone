@@ -35,9 +35,11 @@ export default class LearnSocialEngineering extends Component {
                     <div className="topic-menu-wrapper">
                         <div className="topic-menu">
                             <h3>Navigation</h3>
-                            <Accordion title="email" />
-                            <Accordion title="phone"/>
-                            <Accordion title="online"/>
+                            <Accordion title="Impersonation" />
+                            <Accordion title="Shoulder Surfing"/>
+                            <Accordion title="Tailgaiting / Mantraps" />
+                            <Accordion title="Dumpster Diving" />
+                            <Accordion title="Watering Holes" />
                         </div>
                     </div>
                     <div className="topic-content-wrapper">
