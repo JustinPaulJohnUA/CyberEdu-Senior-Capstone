@@ -18,7 +18,68 @@
 	color: white;
 }
 
-.encryption-option-steps-wrapper,
-.decryption-option-steps-wrapper {
+.download-link {
+	color: white;
+}
+
+#password-input-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 60%;
+}
+
+#encrypter-applet-navigation {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.encrypter-nav-button {
+	width: 90px;
+	height: 50px;
+	background-color: #3b3b98;
+	border: none;
+	color: white;
+	border-radius: 5px;
+}
+
+.active {
+	background-color: #3b3b9880;
+}
+
+.active:hover {
+	background-color: #3b3b98;
+}
+
+.disabled {
+	background-color: #5d5d83;
+}
+
+#password-input-wrapper h3 {
+	font-size: 36px;
+}
+
+#file-upload-wrapper,
+#encrypt-decrypt-wrapper,
+#download-wrapper {
+	display: none;
+}
+
+#show-steps-wrapper {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#show-steps-wrapper button {
+	width: 90px;
+	height: 30px;
+	background-color: #5f5fce;
+	color: white;
+	border: none;
+}
+
+#show-next-button,
+#show-previous-button {
 	display: none;
 }
