@@ -1,13 +1,7 @@
-#encryption-steps-container {
-	background-color: #23235b;
-	box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
-	width: 500px;
-	max-width: 100%;
-	padding: 5%;
-}
-
 #encrypter-applet-content-wrapper {
-	height: 90%;
+	height: 95%;
+	display: flex;
+	flex-direction: column;
 }
 
 #encrypter-applet-content-wrapper h3 {
@@ -16,70 +10,109 @@
 
 .encrypter-applet-content-title {
 	color: white;
+	margin: 1% 0;
 }
 
-.download-link {
+#download-link {
 	color: white;
 }
 
-#password-input-wrapper {
+#password-input-wrapper,
+#file-upload-wrapper,
+#download-wrapper,
+#decrypt-input-wrapper {
+	display: none;
+}
+
+#encrypt-decrypt-wrapper {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-	height: 60%;
 }
 
-#encrypter-applet-navigation {
-	display: flex;
-	justify-content: space-evenly;
-}
-
-.encrypter-nav-button {
-	width: 90px;
-	height: 50px;
-	background-color: #3b3b98;
+#encrypt-decrypt-wrapper button {
+	width: 240px;
+	height: 70px;
+	margin: 1% 0;
 	border: none;
-	color: white;
 	border-radius: 5px;
-}
-
-.active {
-	background-color: #3b3b9880;
-}
-
-.active:hover {
-	background-color: #3b3b98;
-}
-
-.disabled {
-	background-color: #5d5d83;
-}
-
-#password-input-wrapper h3 {
-	font-size: 36px;
-}
-
-#file-upload-wrapper,
-#encrypt-decrypt-wrapper,
-#download-wrapper {
-	display: none;
-}
-
-#show-steps-wrapper {
-	display: flex;
-	justify-content: flex-end;
-}
-
-#show-steps-wrapper button {
-	width: 90px;
-	height: 30px;
-	background-color: #5f5fce;
 	color: white;
-	border: none;
+	font-size: 24px;
 }
 
-#show-next-button,
-#show-previous-button {
+#encrypt {
+	background-color: #92cd84;
+}
+
+#decrypt {
+	background-color: #e661b7;
+}
+
+#encrypt-decrypt-wrapper h3 {
+	font-size: 48px;
+}
+
+#file-upload-wrapper h3 {
+	font-size: 48px;
+	text-align: center;
+}
+
+#file-upload-wrapper input {
+	font-size: 25px;
+	color: white;
+}
+
+#password-input-wrapper h3,
+#decrypt-input-wrapper h3 {
+	font-size: 48px;
+	text-align: center;
+}
+
+#password-input-wrapper input,
+#decrypt-input-wrapper input {
+	width: 80%;
+	height: 30px;
+	margin-bottom: 10%;
+}
+
+#password-input-wrapper button,
+#decrypt-input-wrapper button {
+	width: 190px;
+	height: 70px;
+	color: white;
+	font-size: 25px;
+}
+
+#download-wrapper {
+	height: 80%;
+}
+
+#download-wrapper h3 {
+	font-size: 48px;
+	text-align: center;
+}
+
+#download-wrapper a {
+	width: 190px;
+	background-color: #3b3b98;
+	height: 55px;
+	text-align: center;
+	font-size: 40px;
+	text-decoration: none;
+	padding: 5px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+#encrypt-button,
+#decrypt-button {
 	display: none;
+}
+
+#encrypt-button {
+	background-color: #92cd84;
+}
+
+#decrypt-button {
+	background-color: #c15645;
 }
