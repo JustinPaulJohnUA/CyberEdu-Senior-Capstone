@@ -45,3 +45,13 @@
 .associations-page-content-wrapper div {
 	margin: 1%;
 }
+
+.react-search-field {
+	display: flex;
+	width: 80%;
+	border-radius: 5px;
+}
+
+.react-search-field-input {
+	padding: 0 !important;
+}

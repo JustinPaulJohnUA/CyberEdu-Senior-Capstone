@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react'
 /*LIBRARY COMPONENT IMPORTS*/
 import ParticleJS from './ParticleJS.js';
 
@@ -9,16 +9,145 @@ import Card from '../components/Card.js';
 import Tooltip from './tooltips/Tooltip.js';
 import Tippy from '@tippyjs/react';
 import { followCursor } from 'tippy.js';
+import SearchField from "react-search-field";
 
 /*ASSETS IMPORTS*/
 import binocularIcon from '../assets/binocular.svg';
+import text from '../assets/AssociationsAssets/text/AssociationsText.json'
 
 /* STYLE IMPORTS*/
 import '../styles/AssociationsPage.css';
 
-export default class AssociationsPage extends Component {
-    render() {
-        return (
+
+export default function AssociationsPage() {
+    var [searchInput, setSearchInput] = useState('');
+    var [currentAssociations, setCurrentAssociations] = useState([])
+
+    useEffect(() => {
+        showSearchResults()
+    }, [searchInput])
+
+    var associationsList = [
+        <Card
+            title={text.ftc.title}
+            img={text.ftc.img}
+            link={text.ftc.link}
+            description={ text.ftc.description}/>,
+        <Card
+            title={text.cisa.title}
+            img={text.cisa.img}
+            link={text.cisa.link}
+            description={text.cisa.description}
+        />,
+        <Card
+            title={text.ic3.title}
+            img={text.ic3.img}
+            link={text.ic3.link}
+            description={text.ic3.description}
+        />,
+        <Card
+            title={text.doj.title}
+            img={text.doj.img}
+            link={text.doj.link}
+            description={text.doj.description}/>,
+        <Card
+            title={text.cis.title}
+            img={text.cis.img}
+            link={text.cis.link}
+            description={text.cis.description}/>,
+        <Card
+            title={text.sans.title}
+            img={text.sans.img}
+            link={text.sans.link}
+            description={text.sans.description} />,
+        <Card
+            title={text.issa.title}
+            img={text.issa.img}
+            link={text.issa.link}
+            description={text.issa.description} />,
+        <Card
+            title={text.csa.title}
+            img={text.csa.img}
+            link={text.csa.link}
+            description={text.csa.description} />,
+        <Card
+            title={text.hisac.title}
+            img={text.hisac.img}
+            link={text.hisac.link}
+            description={text.hisac.description} />,
+        <Card
+            title={text.fsisac.title}
+            img={text.fsisac.img}
+            link={text.fsisac.link}
+            description={text.fsisac.description} />,
+        <Card
+            title={text.nist.title}
+            img={text.nist.img}
+            link={text.nist.link}
+            description={text.nist.description} />,
+        <Card
+            title={text.isaca.title}
+            img={text.isaca.img}
+            link={text.isaca.link}
+            description={text.isaca.description} />,
+        <Card
+            title={text.isc2.title}
+            img={text.isc2.img}
+            link={text.isc2.link}
+            description={text.isc2.description} />,
+        <Card
+            title={text.centerfor.title}
+            img={text.centerfor.img}
+            link={text.centerfor.link}
+            description={text.centerfor.description} />,
+        <Card
+            title={text.cyan.title}
+            img={text.cyan.img}
+            link={text.cyan.link}
+            description={text.cyan.description} />,
+        <Card
+            title={text.aisp.title}
+            img={text.aisp.img}
+            link={text.aisp.link}
+            description={text.aisp.description} />,
+        <Card
+            title={text.csia.title}
+            img={text.csia.img}
+            link={text.csia.link}
+            description={text.csia.description} />,
+        <Card
+            title={text.isao.title}
+            img={text.isao.img}
+            link={text.isao.link}
+            description={text.isao.description} />,
+        <Card
+            title={text.owasp.title}
+            img={text.owasp.img}
+            link={text.owasp.link}
+            description={text.owasp.description} />,
+        <Card
+            title={text.isf.title}
+            img={text.isf.img}
+            link={text.isf.link}
+            description={text.isf.description}/>
+    ]
+
+    var showSearchResults = () => {
+        if (searchInput === '') {
+            setCurrentAssociations(associationsList);
+        } else {
+            var newCurrentAssociations = []
+            for (var i = 0; i < associationsList.length; i++) {
+                var title = associationsList[i].props.title.toLowerCase()
+                if (title.includes(searchInput)) {
+                    newCurrentAssociations.push(associationsList[i])
+                }
+            }
+            setCurrentAssociations(newCurrentAssociations)
+        }
+    }
+
+    return (
             <div>
                 <Header />
                 <div className="associations-page-wrapper">
@@ -26,42 +155,18 @@ export default class AssociationsPage extends Component {
                         <img id="associations-page-title-icon" src={binocularIcon} />
                         <div>Cybersecurity Associations</div>
                     </div>
+
+                <SearchField onChange={ (e) => setSearchInput(e) } className="associations-search" placeholder="Search..."/>
+
                     <div className="associations-page-content-wrapper">
-                        <Card
-                            title={"FTC Consumer Info"}
-                            img={"https://www.consumer.ftc.gov/sites/www.consumer.ftc.gov/files/default_images/ftc_social_share_default_en.jpg"}
-                            link={"https://www.consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams"}
-                            description={ "The US Federal Trade Commission has some excellent tips on how to report phishing scams and identitiy theft." }/>
-                        <Card
-                            title={"CISA"}
-                            img={"https://images.squarespace-cdn.com/content/59bff1652994cad96d3bf826/1570732548531-EIWHLM3Z6DYLSDRKIG4J/medical-device-cybersecurity-3-alerts-issued-showcase_image-6-a-13046.jpg?content-type=image%2Fjpeg"}
-                            link={"https://us-cert.cisa.gov/ncas/tips/ST04-014"}
-                            description={"The US Cybersecurity and Infrastructure Security Agency (CISA) report cyber crime traffic on a daily basis, while also providing an abundance of tips on how to mitigate various cybercrimes"}
-                        />
-                        <Card
-                            title={"IC3"}
-                            img={"https://130e178e8f8ba617604b-8aedd782b7d22cfe0d1146da69a52436.ssl.cf1.rackcdn.com/fbi-sees-internet-enabled-crime-losses-hit-13-billion-showcase_image-7-a-10033.jpg"}
-                            link={"https://www.ic3.gov/Home/ComplaintChoice/default.aspx"}
-                            description={"The FBI's Internet Crime Complaint Center (IC3) provides information on some of the more dangerous internet crimes - inlcuding terrorist, threats, human-trafficking, etc"}
-                        />
-                        <Card
-                            title={"DOJ"}
-                            img={"https://i.ytimg.com/vi/9zG-wcRj5G0/maxresdefault.jpg"}
-                            link={"https://www.justice.gov/criminal-ccips/reporting-computer-internet-related-or-intellectual-property-crime"}
-                            description={"The US Department of Justice (DOJ) provides reports on hacking, fraud, and intellectual-property related crimes"}/>
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
+                    {[...currentAssociations]}
                     </div>
                 </div>
                 <Footer />
                 <ParticleJS />
             </div>
-        )
-    }
+    )
 }
+
+
+

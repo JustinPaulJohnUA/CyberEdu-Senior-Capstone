@@ -1,3 +1,123 @@
 {
-    
+    "ftc": {
+        "title": "FTC Consumer Info ",
+        "img": "https://www.consumer.ftc.gov/sites/www.consumer.ftc.gov/files/default_images/ftc_social_share_default_en.jpg",
+        "link": "https://www.consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams",
+        "description": "The US Federal Trade Commission has some excellent tips on how to report phishing scams and identitiy theft."
+    },
+    "cisa": {
+        "title": "CISA",
+        "img": "https://images.squarespace-cdn.com/content/59bff1652994cad96d3bf826/1570732548531-EIWHLM3Z6DYLSDRKIG4J/medical-device-cybersecurity-3-alerts-issued-showcase_image-6-a-13046.jpg?content-type=image%2Fjpeg",
+        "link": "https://us-cert.cisa.gov/ncas/tips/ST04-014",
+        "description": "The US Cybersecurity and Infrastructure Security Agency (CISA) report cyber crime traffic on a daily basis, while also providing an abundance of tips on how to mitigate various cybercrimes"
+    },
+    "ic3": {
+        "title": "IC3",
+        "img": "https://130e178e8f8ba617604b-8aedd782b7d22cfe0d1146da69a52436.ssl.cf1.rackcdn.com/fbi-sees-internet-enabled-crime-losses-hit-13-billion-showcase_image-7-a-10033.jpg",
+        "link": "https://www.ic3.gov/Home/ComplaintChoice/default.aspx",
+        "description": "The FBI's Internet Crime Complaint Center (IC3) provides information on some of the more dangerous internet crimes - inlcuding terrorist, threats, human-trafficking, etc"
+    },
+    "doj": {
+        "title": "Department of Justice",
+        "img": "https://i.ytimg.com/vi/9zG-wcRj5G0/maxresdefault.jpg",
+        "link": "https://www.justice.gov/criminal-ccips/reporting-computer-internet-related-or-intellectual-property-crime",
+        "description": "The US Department of Justice (DOJ) provides reports on hacking, fraud, and intellectual-property related crimes"
+    },
+    "cis": {
+        "title": "CIS",
+        "img": "https://www.cisecurity.org/wp-content/uploads/2018/10/2.png",
+        "link": "https://www.cisecurity.org/",
+        "description": "The Center for Internet Security (CIS) offers tools, guidance including benchmarks and controls, and best practices to secure IT systems. "
+    },
+    "sans": {
+        "title": "The SANS Institute",
+        "img": "https://infosec-conferences.com/wp-content/uploads/2019/11/logo-conference-series-sans-v1.png",
+        "link": "https://www.sans.org/",
+        "description": "SANS Institute is one of the largest informants regarding information security training, awareness, and certifications. "
+    },
+    "issa": {
+        "title": "The Information Systems Security Association",
+        "img": "https://media-exp1.licdn.com/dms/image/C561BAQGmAgFO-yv4KA/company-background_10000/0/1570506133578?e=2159024400&v=beta&t=nswzpXpRLpbCqIgKWJ0MSAoAjDaOG3HrEqA5V2tpAjo",
+        "link": "https://www.issa.org/",
+        "description": "The Information Systems Security Association (ISSA) provides support and education for a secure digital world that focuses on careers and networking. "
+    },
+    "csa": {
+        "title": "The Cloud Security Alliance",
+        "img": "https://prnewswire2-a.akamaihd.net/p/1893751/sp/189375100/thumbnail/entry_id/0_yv6qpck7/def_height/2700/def_width/2700/version/100012/type/1",
+        "link": "https://cloudsecurityalliance.org/",
+        "description": "The Cloud Security Alliance (CSA) focuses on best practices and awareness of cloud computing and offers guidance and certifications in cloud security. "
+    },
+    "hisac": {
+        "title": "The Health Information Sharing and Analysis Center",
+        "img": "https://h-isac.org/wp-content/uploads/2019/09/h-isac-logo-rgb-color-01.jpg",
+        "link": "https://h-isac.org/",
+        "description": " The Health Information Sharing and Analysis Center (H-ISAC) focuses on sharing information about threats, incidents and vulnerabilities of infrastructures and operators within the Health Care and Public Health industries."
+    },
+    "fsisac": {
+        "title": "The Financial Services and Information Sharing and Analysis Center",
+        "img": "https://cyberriskleaders.com/wp-content/uploads/2020/11/FS-ISAC-Logo835x396.png",
+        "link": "https://www.fsisac.com/ ",
+        "description": "The Financial Services and Information Sharing and Analysis Center (FS-ISAC) focuses on cybersecurity in the financial industries through awareness, tools, and communication between security experts. "
+    },
+    "nist": {
+        "title": "The National Institute of Standards and Technology",
+        "img": "https://pbs.twimg.com/profile_images/1237009305779482624/hP8oa5cB_400x400.png",
+        "link": "https://www.nist.gov/ ",
+        "description": "The National Institute of Standards and Technology (NIST) is a part of the U.S. Department of Commerce that offers extensive frameworks, support, research, and guidance of all technologies and cybersecurity. "
+    },
+    "isaca": {
+        "title": "The Information Systems Audit and Control Association",
+        "img": " https://www.isaca.org/",
+        "link": "https://registereddocuments.online/wp-content/uploads/2020/12/isaca-logo-web.png",
+        "description": " The Information Systems Audit and Control Association (ISACA) is a worldwide organization that provides resources, education, training, and connections to help business professionals of using technology confidently in a secure manner."
+    },
+    "isc2": {
+        "title": "ISC(2)",
+        "img": "https://pbs.twimg.com/profile_images/495275133724938242/qFA5gyN7.jpeg",
+        "link": "https://www.isc2.org/ ",
+        "description": "The ISC(2) provides education and guidance to businesses and security professionals by offering certification programs, connections, and tools for a safer environment. "
+    },
+    "centerfor": {
+        "title": "The Center for Cyber Safety and Education",
+        "img": "https://pbs.twimg.com/profile_images/1025104472140390400/XqqDV-pY.jpg",
+        "link": " https://www.iamcybersafe.org/s/ ",
+        "description": "The The Center for Cyber Safety and Education also offers education to the general public through research, classes, and volunteers by focusing on age groups to help all generations stay safe."
+    },
+    "cyan": {
+        "title": "Cybersecurity Advisors Network",
+        "img": "https://cyan.network/wp-content/uploads/2015/07/cropped-Logo-cyan-seul-final-e1436176514133.png",
+        "link": "https://cyan.network/ ",
+        "description": "The Cybersecurity Advisors Network (CyAN) connects cybersecurity experts from all around the world with different practices to help fight against cybercrime through different experiences. "
+    },
+    "aisp": {
+        "title": "The Association of Information Security Professional",
+        "img": "https://yt3.ggpht.com/ytc/AAUvwnhpvkXyHOSyEQcBUWnG2Hn2ThSEHfYoggHoYVxD=s900-c-k-c0x00ffffff-no-rj",
+        "link": "https://www.aisp.sg/ ",
+        "description": "The Association of Information Security Professional  (AISP) that helps grow security professionals through technical education and management expertise based in Singapore. "
+    },
+    "csia": {
+        "title": "The Cyber, Space & Intelligence Association (CSIA)",
+        "img": "http://cyberspaceintel.org/wp-content/uploads/2018/03/cropped-favicon.png",
+        "link": " https://cyberspaceintel.org/ ",
+        "description": "The Cyber, Space & Intelligence Association (CSIA) offers awareness, training, and education from security leaders in governments and businesses that focuses on Cyber, Space, and Intelligence in technology and security."
+    },
+    "isao": {
+        "title": "The Information Sharing and Analysis Organization",
+        "img": "https://biz.prlog.org/ISAOSO/logo.jpg",
+        "link": " https://connect.comptia.org/membership/comptia-isao",
+        "description": "The Information Sharing and Analysis Organization through CompTia provides a membership that offers communication with other professionals, threat intelligence, and analyses to meet the benchmarks necessary for businesses."
+    },
+    "owasp": {
+        "title": "Open Web Application Security Project (OWASP)",
+        "img": "https://www.guardsquare.com/files/media/OWASP_mobile_top_10.png",
+        "link": " https://owasp.org/ ",
+        "description": "The Open Web Application Security Project (OWASP) focuses on software and web security and offers tools, resources, education, training, and a very knowledgeable community."
+    },
+    "isf": {
+        "title": "The Information Security Forum",
+        "img": "https://www.securityforum.org/wp-content/uploads/2021/01/ISF-Logo_Black-408x315.jpg",
+        "link": " https://www.securityforum.org/",
+        "description": "The Information Security Forum is an organization that focuses on investigating, analyzing, and mitigating information security and risk management issues."
+    }
+
 }
