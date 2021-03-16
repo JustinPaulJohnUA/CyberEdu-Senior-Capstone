@@ -83,7 +83,7 @@
 }
 
 .topic-content {
-	height: 100%;
+	height: 120%;
 	width: 90%;
 	margin: auto;
 	background-color: #1b1f38;
@@ -152,7 +152,12 @@
 	background-color: #182479;
 }
 
-#email-phishing-content h4 {
+#email-phishing-content h4,
+#impersonation-content h4,
+#shoulder-surfing-content h4,
+#tailgating-content h4,
+#dumpster-diving-content h4,
+#watering-hole-content {
 	text-align: center;
 	margin: 1% 0;
 }

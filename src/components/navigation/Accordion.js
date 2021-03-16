@@ -14,10 +14,8 @@ export default function Accordion(props) {
         setHeightState(
             setActive === "active" ? "0px" : `${content.current.scrollHeight}px`
         );
-        console.log(content.current.scrollHeight);
     }
 
-    console.log(props.anchors.d)
     return (
         <div className="accordion-wrapper">
             <button className={`accordion ${setActive}`} onClick={toggleAccordion}>{props.title}</button>

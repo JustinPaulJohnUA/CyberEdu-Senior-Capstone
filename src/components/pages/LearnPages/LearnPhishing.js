@@ -49,7 +49,7 @@ export default class LearnPhishing extends Component {
                                 example: "#video-phishing-example",
                                 mitigation: "#video-phishing-mitigation"
                             }}/>
-                            <Accordion title="Spear" anchors={{
+                            <Accordion title="Spear Phishing" anchors={{
                                 description: "#email-phishing-description",
                                 example: "#email-phishing-example",
                                 mitigation: "#email-phishing-mitigation"
@@ -92,14 +92,23 @@ export default class LearnPhishing extends Component {
                                 </div>
                             </div>
 
+                            <div id="email-phishing-content">
+                                <h4 id="spear-phishing-title">Spear Phishing</h4>
+                                <div className="text-content-wrapper">
+                                    <h3 className="text-content-title" id="spear-phishing-description">What is Spear Phishing?</h3>
+                                    <p className="text-content">{ text.spearphishing.description }</p>
+                                </div>
+                                <div className="text-content-wrapper">
+                                    <h3 className="text-content-title" id="spear-phishing-example">What Does Spear Phishing Look Like?</h3>
+                                    <p className="text-content">{ text.spearphishing.example }</p>
+                                </div>
+                                <div className="text-content-wrapper">
+                                    <h3 className="text-content-title" id="spear-phishing-mitigation">How Can I Protect Myself Against Spear Phishing?</h3>
+                                    <p className="text-content">{ text.spearphishing.mitigation }</p>
+                                </div>
+                            </div>
 
                         </div>
-                    </div>
-                    <div className="previous-button">
-                        <button>Previous Section</button>
-                    </div>
-                    <div className="next-button">
-                        <button>Next Section</button>
                     </div>
                 </div>
                 <Footer />
