@@ -17,13 +17,14 @@ export default function Accordion(props) {
         console.log(content.current.scrollHeight);
     }
 
+    console.log(props.anchors.d)
     return (
         <div className="accordion-wrapper">
             <button className={`accordion ${setActive}`} onClick={toggleAccordion}>{props.title}</button>
-            <div ref={content} style={{ maxHeight: `${setHeight}`}} className="panel">
-                <p>Description</p>
-                <p>Example</p>
-                <p>Mitigation</p>
+            <div ref={content} style={{ maxHeight: `${setHeight}` }} className="panel">
+                <a href={props.anchors.description}>Description</a>
+                <a href={props.anchors.example}>Example</a>
+                <a href={props.anchors.mitigation}>Mitigation</a>
             </div>
         </div>
     )

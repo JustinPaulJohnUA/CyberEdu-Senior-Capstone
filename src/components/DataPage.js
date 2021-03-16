@@ -33,7 +33,7 @@ export default class DataPage extends Component {
                     <div className="data-page-content">
                         <h2 className="data-page-content-title">Live Botnet Traffic</h2>
                         <div className="data-page-content-graph">
-                            <iframe width="80%" height="620" src="https://cybermap.kaspersky.com/en/widget/dynamic/dark" frameborder="0"></iframe>
+                            <iframe src="https://threatmap.bitdefender.com/" style={{ border:"0px #ffffff none;"}} name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" height="400px" width="80%" allowfullscreen></iframe>
                         </div>
                         <div id="data-page-content-description">
                             { DataText['kaspersky-map'] }

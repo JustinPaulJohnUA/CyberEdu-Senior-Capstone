@@ -10,6 +10,7 @@ import Footer from '../../Footer.js';
 import Header from '../../navigation/Header.js';
 import Tooltip from '../../tooltips/Tooltip.js';
 import Accordion from '../../navigation/Accordion.js';
+import LearnInPageNav from '../LearnPages/LearnInPageNav.js';
 
 /*ASSET IMPORTS*/
 import phishingIcon from '../../../assets/phishing.svg';
@@ -27,7 +28,7 @@ export default class LearnSocialEngineering extends Component {
         return (
             <div>
                 <Header />
-
+                <LearnInPageNav />
                 <div className="topic-content-container">
                     <div className="topic-icon">
                         <img className="topic-icon" src={ hackerIcon }/>

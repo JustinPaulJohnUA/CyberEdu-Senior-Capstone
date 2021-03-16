@@ -12,6 +12,7 @@ import Footer from '../../Footer.js';
 import Header from '../../navigation/Header.js';
 import Tooltip from '../../tooltips/Tooltip.js';
 import Accordion from '../../navigation/Accordion.js';
+import LearnInPageNav from '../LearnPages/LearnInPageNav.js';
 
 /*ASSET IMPORTS*/
 import phishingIcon from '../../../assets/phishing.svg';
@@ -23,13 +24,14 @@ import '../../../styles/LearnPhishing.css'
 
 /*TEXT IMPORTS*/
 import learnContent from '../../../text/text.json';
+import text from '../../../assets/LearnAssets/text/PhishingText.json';
 
 export default class LearnPhishing extends Component {
     render() {
         return (
             <div>
                 <Header />
-
+                <LearnInPageNav />
                 <div className="topic-content-container">
                     <div className="topic-icon">
                         <img className="topic-icon" src={ phishingIcon }/>
@@ -37,44 +39,59 @@ export default class LearnPhishing extends Component {
                     <div className="topic-menu-wrapper">
                         <div className="topic-menu">
                             <h3>Navigation</h3>
-                            <Accordion title="Email" />
-                            <Accordion title="Vishing"/>
-                            <Accordion title="Spear"/>
+                            <Accordion title="Email" anchors={{
+                                description: "#email-phishing-description",
+                                example: "#email-phishing-example",
+                                mitigation: "#email-phishing-mitigation"
+                            }}/>
+                            <Accordion title="Vishing" anchors={{
+                                description: "#video-phishing-description",
+                                example: "#video-phishing-example",
+                                mitigation: "#video-phishing-mitigation"
+                            }}/>
+                            <Accordion title="Spear" anchors={{
+                                description: "#email-phishing-description",
+                                example: "#email-phishing-example",
+                                mitigation: "#email-phishing-mitigation"
+                            }}/>
                         </div>
                     </div>
                     <div className="topic-content-wrapper">
                         <h2 className="topic-content-title">Phishing</h2>
                         <div className="topic-content">
 
-                            <div className="text-content-wrapper">
-                                <h3 className="text-content-title">Where does phishing take place?</h3>
-                                <p className="text-content">{ learnContent.p1 }</p>
+                            <div id="email-phishing-content">
+                                <h4 id="email-phishing-title">Email Phishing</h4>
+                                <div className="text-content-wrapper">
+                                    <h3 className="text-content-title" id="email-phishing-description">What is Email Phishing?</h3>
+                                    <p className="text-content">{ text.email.decription }</p>
+                                </div>
+                                <div className="text-content-wrapper">
+                                    <h3 className="text-content-title" id="email-phishing-example">What Does Email Phishing Look Like?</h3>
+                                    <p className="text-content">{ text.email.example }</p>
+                                </div>
+                                <div className="text-content-wrapper">
+                                    <h3 className="text-content-title" id="email-phishing-mitigation">How Can I Protect Myself Against Email Phishing?</h3>
+                                    <p className="text-content">{ text.email.mitigation }</p>
+                                </div>
                             </div>
 
-                            <div className="text-content-wrapper">
-                                <h3 className="text-content-title">What does phishing look like?</h3>
-                                <p className="text-content">{ learnContent.p2 }</p>
+                            <div id="email-phishing-content">
+                                <h4 id="email-phishing-title">Video Phishing (Vishing)</h4>
+                                <div className="text-content-wrapper">
+                                    <h3 className="text-content-title" id="video-phishing-description">What is Vishing?</h3>
+                                    <p className="text-content">{ text.vishing.description }</p>
+                                </div>
+                                <div className="text-content-wrapper">
+                                    <h3 className="text-content-title" id="video-phishing-example">What Does Vishing Look Like?</h3>
+                                    <p className="text-content">{ text.vishing.example }</p>
+                                </div>
+                                <div className="text-content-wrapper">
+                                    <h3 className="text-content-title" id="video-phishing-mitigation">How Can I Protect Myself Against Vishing?</h3>
+                                    <p className="text-content">{ text.vishing.mitigation }</p>
+                                </div>
                             </div>
 
-                            <div className="text-content-wrapper">
-                                <h3 className="text-content-title">How do they get my information?</h3>
-                                <p className="text-content">{ learnContent.p3 }</p>
-                            </div>
-
-                            <div className="text-content-wrapper">
-                                <h3 className="text-content-title">What can I do to protect myself?</h3>
-                                <p className="text-content">{ learnContent.p4 }</p>
-                            </div>
-
-                            <div className="text-content-wrapper">
-                                <h3 className="text-content-title">This is a lot to look for. Is there any way to make this easier?</h3>
-                                <p className="text-content">{ learnContent.p5 }</p>
-                            </div>
-
-                            <div className="text-content-wrapper">
-                                <h3 className="text-content-title">I think I have been a target of a phishing scam. What do I do?</h3>
-                                <p className="text-content">{ learnContent.p6 }</p>
-                            </div>
 
                         </div>
                     </div>

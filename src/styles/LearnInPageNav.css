@@ -1,0 +1,16 @@
+#learn-nav-container {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 30%;
+}
+
+#learn-nav-container a {
+    margin: 0 3%;
+}
+
+#learn-nav-container img {
+    width: 60px;
+    height: 70px;
+}

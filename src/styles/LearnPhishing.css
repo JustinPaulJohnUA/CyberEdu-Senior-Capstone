@@ -45,7 +45,9 @@
 	width: 100%;
 	margin: 2% 0;
 	text-align: center;
-	background-color: rgba(61, 61, 61, 0.404);
+	font-size: 16px;
+	color: black;
+	text-decoration: none;
 }
 
 .text-content-wrapper {
@@ -65,6 +67,8 @@
 	color: white;
 	padding: 2%;
 	border-radius: 15px;
+	line-height: 150%;
+	letter-spacing: 1.5px;
 }
 
 .text-content-title {
@@ -146,4 +150,9 @@
 .previous-button button:hover,
 .next-button button:hover {
 	background-color: #182479;
+}
+
+#email-phishing-content h4 {
+	text-align: center;
+	margin: 1% 0;
 }
