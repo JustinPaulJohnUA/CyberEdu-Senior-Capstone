@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../styles/DataPageSection.css'
+import './DataPageSection.css'
 
 export default function DataPageSection(props) {
     return (

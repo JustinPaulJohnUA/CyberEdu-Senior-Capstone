@@ -1,22 +1,20 @@
 import React, { useState, useEffect } from 'react'
-/*LIBRARY COMPONENT IMPORTS*/
-import ParticleJS from './ParticleJS.js';
 
-/*COMPONENT IMPORTS */
-import Footer from './Footer.js';
-import Header from './navigation/Header.js';
-import Card from '../components/Card.js';
-import Tooltip from './tooltips/Tooltip.js';
-import Tippy from '@tippyjs/react';
-import { followCursor } from 'tippy.js';
+/*LIBRARY COMPONENT IMPORTS*/
 import SearchField from "react-search-field";
 
+/*COMPONENT IMPORTS */
+import Footer from '../../../components/navigation/footer/Footer.js';
+import Header from '../../../components/navigation/header/Header.js';
+import Card from '../../cards/Card.js';
+import ParticleJS from '../../../components/effects/ParticleJS.js';
+
 /*ASSETS IMPORTS*/
-import binocularIcon from '../assets/binocular.svg';
-import text from '../assets/AssociationsAssets/text/AssociationsText.json'
+import binocularIcon from '../../../assets/binocular.svg';
+import text from '../../../assets/AssociationsAssets/text/AssociationsText.json'
 
 /* STYLE IMPORTS*/
-import '../styles/AssociationsPage.css';
+import './AssociationsPage.css';
 
 
 export default function AssociationsPage() {

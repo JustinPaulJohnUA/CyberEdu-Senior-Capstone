@@ -83,5 +83,19 @@ img {
 	height: 100%;
 }
 
-.popup {
+.animation {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background-color: aqua;
+	z-index: 5;
+	overflow: hidden;
+	/* display: flex; */
+	display: none;
+}
+
+.animation h5 {
+	margin: auto;
+	align-self: center;
+	color: #e78267;
 }

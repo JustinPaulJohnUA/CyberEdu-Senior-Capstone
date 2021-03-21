@@ -6,13 +6,13 @@ import phishingIcon from '../../../assets/phishing.svg';
 import hackerIcon from '../../../assets/hacker.svg';
 import wormIcon from '../../../assets/worm.svg';
 
-
+/* LIBRARY COMPONENT IMPORTS */
 import Tippy from '@tippyjs/react';
 import Tooltip from '../../../components/tooltips/Tooltip.js'
 import { followCursor } from 'tippy.js';
 
 /*STYLE IMPORTS*/
-import '../../../styles/LearnInPageNav.css'
+import './LearnInPageNav.css'
 import 'tippy.js/dist/tippy.css';
 import 'tippy.js/animations/scale.css';
 import 'tippy.js/dist/backdrop.css';

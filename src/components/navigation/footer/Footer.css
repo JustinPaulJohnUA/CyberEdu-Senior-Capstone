@@ -1,10 +1,15 @@
+/*
+	- Targets the wrapper div of the entire footer component
+	- Footer component is positioned absolutely (at the bottom of the page), 
+	  so it rests on top of the ParticleJS component
+	- The content of the footer is placed within a grid
+*/
 .footer-wrapper {
 	top: 110%;
 	height: 350px;
 	width: 100%;
 	background-color: #141831a6;
 	position: absolute;
-
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 0.25fr 0.5fr;
@@ -14,6 +19,7 @@
 		'site-map-wrapper licenses-wrapper copyright-wrapper about-us-wrapper';
 }
 
+/*Targets the title of the footer */
 .footer-site-name {
 	font-size: 64px;
 	color: white;
@@ -22,16 +28,19 @@
 	margin-left: 1%;
 }
 
+/*Targets the footer's site icon image*/
 .footer-icon {
 	width: 90px;
 	height: 90px;
 	vertical-align: bottom;
 }
 
+/*Targets the footer's site icon text*/
 .footer-logo-text {
 	margin-bottom: 1%;
 }
 
+/*Targets all the category headers and category list-items within the footer's grid */
 .site-map-header,
 .licenses-header,
 .copyright-header,
@@ -43,6 +52,7 @@
 	color: white;
 }
 
+/*Targets all the category headers within the footer's grid*/
 .site-map-header,
 .licenses-header,
 .copyright-header,
@@ -50,6 +60,7 @@
 	text-align: center;
 }
 
+/*Targets all the category list-containers within the footer's grid*/
 .site-map-ul,
 .licenses-ul,
 .copyright-ul,
@@ -60,6 +71,8 @@
 	text-align: center;
 }
 
+/* The following styles below are used to assign respective classNames from the Footer component to their place within 
+	the grid area.*/
 .footer-logo-wrapper {
 	grid-area: footer-logo-wrapper;
 	margin: 1%;

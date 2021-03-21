@@ -1,9 +1,27 @@
+/*
+    Author: Justin John 
+    Project: ISTA 498 Capstone
+    Date: Jan 2021 - May 2021
+*/
+
+
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 
-import '../styles/Footer.css';
-import spywareIcon from '../assets/spyware.svg';
 
+/* STYLE IMPORTS */
+import './Footer.css';
+
+/* ASSET IMPORTS */
+import spywareIcon from '../../../assets/spyware.svg';
+
+
+/* 
+    Description
+        - Describes the makeup of the website's footer
+        - The footer can link back to any page on the site (Site Map) via react-router Links 
+        - The footer also contains are context of use and resources/credits pages 
+*/
 export default class Footer extends Component {
     render() {
         return (
@@ -11,7 +29,7 @@ export default class Footer extends Component {
                 
                 <div className="footer-logo-wrapper">
                     <img className="footer-icon" src={spywareIcon} />
-                    <h2 className="footer-site-name">Cyber Edu</h2>
+                    <h2 className="footer-site-name">CyberWise</h2>
                 </div>
      
                 <div className="site-map-wrapper">
@@ -33,7 +51,7 @@ export default class Footer extends Component {
                 </div>
 
                 <div className="licenses-wrapper">
-                    <h2 className="licenses-header">Licenses & Credit</h2>
+                    <h2 className="licenses-header">Licenses &amp; Credit</h2>
                     <ul className="licenses-ul">
                         <li>Credit Page</li>
                     </ul>
@@ -42,10 +60,10 @@ export default class Footer extends Component {
                 <div className="copyright-wrapper">
                     <h2 className="copyright-header">Group Members</h2>
                     <ul className="copyright-ul">
-                        <li>Christine</li>
-                        <li>Justin</li>
-                        <li>Chris</li>
-                        <li>Hisham</li>
+                        <li>Christine Heaton</li>
+                        <li>Justin John</li>
+                        <li>Chris Huerta</li>
+                        <li>Hisham Alhindawi</li>
                     </ul>
                 </div>
 

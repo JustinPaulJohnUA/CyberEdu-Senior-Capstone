@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
 /*LIBRARY COMPONENT IMPORTS*/
-import ParticleJS from './ParticleJS.js';
+import ParticleJS from '../../effects/ParticleJS.js';
 import Tippy from '@tippyjs/react';
 import { followCursor } from 'tippy.js';
 import { Link } from 'react-router-dom';
 
 /*STYLE IMPORTS*/
-import '../styles/Home.css';
+import './Home.css';
 import 'tippy.js/dist/tippy.css';
 import 'tippy.js/animations/scale.css';
 import 'tippy.js/dist/backdrop.css';
@@ -15,21 +15,22 @@ import 'tippy.js/animations/shift-away.css';
 import 'tippy.js/themes/translucent.css';
 
 /*COMPONENT IMPORTS */
-import Footer from '../components/Footer.js';
-import Tooltip from '../components/tooltips/Tooltip.js'
+import Footer from '../../navigation/footer/Footer.js';
+import Tooltip from '../../tooltips/Tooltip.js'
 
 /*ASSET IMPORTS */
-import spywareIcon from '../assets/spyware.svg';
-import hammerIcon from '../assets/hammer.png';
-import mapIcon from '../assets/map.svg';
-import binocularIcon from '../assets/binocular.png';
-import folderIcon from '../assets/folder.png';
+import spywareIcon from '../../../assets/spyware.svg';
+import hammerIcon from '../../../assets/hammer.png';
+import mapIcon from '../../../assets/map.svg';
+import binocularIcon from '../../../assets/binocular.svg';
+import folderIcon from '../../../assets/folder.png';
 
 
 export default class Home extends Component {
     render() {
         return (
             <div className='wrapper'>
+
                 <div className="grid-container">
                     <div className="LogoIcon">
                         <h1 className="homepageHeading">Cyber Edu</h1>

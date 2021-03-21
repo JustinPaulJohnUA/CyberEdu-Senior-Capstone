@@ -1,29 +1,21 @@
 import React, { Component } from 'react'
 
 /*LIBRARY COMPONENT IMPORTS*/
-import ParticleJS from '../../ParticleJS.js';
-import Tippy from '@tippyjs/react';
-import { followCursor } from 'tippy.js';
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import ParticleJS from '../../effects/ParticleJS.js';
 
 /*COMPONENT IMPORTS */
-import Footer from '../../Footer.js';
-import Header from '../../navigation/Header.js';
-import Tooltip from '../../tooltips/Tooltip.js';
-import Accordion from '../../navigation/Accordion.js';
+import Footer from '../../navigation/footer/Footer.js';
+import Header from '../../navigation/header/Header.js';
+import Accordion from '../../navigation/accordion/Accordion.js';
 import LearnInPageNav from '../LearnPages/LearnInPageNav.js';
 
 /*ASSET IMPORTS*/
 import phishingIcon from '../../../assets/phishing.svg';
-import hackerIcon from '../../../assets/hacker.svg';
-import wormIcon from '../../../assets/worm.svg';
 
 /*STYLE IMPORTS*/
-import '../../../styles/LearnPhishing.css'
+// import './LearnPhishing.css'
 
 /*TEXT IMPORTS*/
-import learnContent from '../../../text/text.json';
 import text from '../../../assets/LearnAssets/text/PhishingText.json';
 
 export default class LearnPhishing extends Component {

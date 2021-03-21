@@ -1,15 +1,14 @@
 import React, { Component } from 'react'
 
 /*LIBRARY COMPONENT IMPORTS*/
-import ParticleJS from '../../ParticleJS.js';
+import ParticleJS from '../../effects/ParticleJS.js';
 import { Link } from 'react-router-dom';
 
 /*COMPONENT IMPORTS */
-import Footer from '../../Footer.js';
-import Header from '../../navigation/Header.js';
+import Footer from '../../navigation/footer/Footer.js';
+import Header from '../../navigation/header/Header.js';
 import Tooltip from '../../tooltips/Tooltip.js';
 import Tippy from '@tippyjs/react';
-import {followCursor} from 'tippy.js';
 
 /*ASSET IMPORTS*/
 import phishingIcon from '../../../assets/phishing.svg';
@@ -17,7 +16,7 @@ import hackerIcon from '../../../assets/hacker.svg';
 import wormIcon from '../../../assets/worm.svg';
 
 /* STYLE IMPORTS */
-import '../../../styles/LearnHome.css';
+import './LearnHome.css';
 
 export default class LearnHome extends Component {
     render() {

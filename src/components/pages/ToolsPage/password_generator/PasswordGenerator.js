@@ -1,7 +1,7 @@
 import React, { Component, useRef } from 'react'
 
 /*STYLE IMPORTS*/
-import '../styles/PasswordGenerator.css';
+import './PasswordGenerator.css';
 
 export default function PasswordGenerator() {
     const randomFunction = {

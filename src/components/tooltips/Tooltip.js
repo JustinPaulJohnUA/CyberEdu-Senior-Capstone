@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 /*STYLE IMPORTS*/
-import '../../styles/Tooltip.css';
+import './Tooltip.css';
 
 export default class Tooltip extends Component {
     render() {

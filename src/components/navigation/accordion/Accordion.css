@@ -1,6 +1,9 @@
+/*targets the wrapper of the entire accordion div component*/
 .accordion-wrapper {
 	width: 100%;
 }
+
+/*targets the button element of the accordion component*/
 .accordion {
 	background-color: #1b1f38;
 	color: white;
@@ -13,11 +16,14 @@
 	transition: 0.4s;
 }
 
+/*targets both the button-element when mouse is hovering over it, 
+and whatever button currently has the className of "active*/
 .active,
 .accordion:hover {
 	background-color: #ccc;
 }
 
+/*targets the div that follows the button-element of the accordion component*/
 .panel {
 	padding: 0 18px;
 	background-color: white;
@@ -28,9 +34,3 @@
 	display: block;
 	color: black;
 }
-
-/* .panel a {
-	color: black;
-	text-decoration: none;
-	background-color: white;
-} */

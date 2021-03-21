@@ -1,28 +1,25 @@
 import React, { Component } from 'react'
 
 /*LIBRARY COMPONENT IMPORTS*/
-import ParticleJS from './ParticleJS.js';
+import ParticleJS from '../../effects/ParticleJS.js';
 
 /*COMPONENT IMPORTS */
-import Footer from './Footer.js';
-import Header from './navigation/Header.js';
-import DataPageSection from '../components/DataPageSection.js';
-import Tooltip from './tooltips/Tooltip.js';
-import Tippy from '@tippyjs/react';
-import {followCursor} from 'tippy.js';
+import Footer from '../../navigation/footer/Footer.js';
+import Header from '../../navigation/header/Header.js';
+import DataPageSection from './DataPageSection.js';
 
 /* STYLE IMPORTS*/
-import '../styles/DataPage.css'
+import './DataPage.css'
 
 /*ASSET IMPORTS*/
-import DataText from '../assets/DataAssets/text/DataText.json';
-import EducationGraph from '../assets/DataAssets/graphs/Distribution of Attacks Among Education.png'
-import HealthcareGraph from '../assets/DataAssets/graphs/Distribution of Attacks Among Healthcare.png'
-import IndividualsGraph from '../assets/DataAssets/graphs/Distribution of Attacks Among Individuals.png'
-import IndustriesGraph from '../assets/DataAssets/graphs/Distribution of Attacks Among Multiple Industries.png'
-import ServicesGraph from '../assets/DataAssets/graphs/Distribution of Attacks Among Public Services.png'
-import DistributionGraph from '../assets/DataAssets/graphs/Distribution_of_Cybercrimes.png'
-import TargetsGraph from '../assets/DataAssets/graphs/Distribution_of_Targets.png'
+import DataText from '../../../assets/DataAssets/text/DataText.json';
+import EducationGraph from '../../../assets/DataAssets/graphs/Distribution of Attacks Among Education.png'
+import HealthcareGraph from '../../../assets/DataAssets/graphs/Distribution of Attacks Among Healthcare.png'
+import IndividualsGraph from '../../../assets/DataAssets/graphs/Distribution of Attacks Among Individuals.png'
+import IndustriesGraph from '../../../assets/DataAssets/graphs/Distribution of Attacks Among Multiple Industries.png'
+import ServicesGraph from '../../../assets/DataAssets/graphs/Distribution of Attacks Among Public Services.png'
+import DistributionGraph from '../../../assets/DataAssets/graphs/Distribution_of_Cybercrimes.png'
+import TargetsGraph from '../../../assets/DataAssets/graphs/Distribution_of_Targets.png'
 
 export default class DataPage extends Component {
     render() {

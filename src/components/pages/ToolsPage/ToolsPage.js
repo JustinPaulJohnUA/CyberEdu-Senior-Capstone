@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
 
 /*LIBRARY COMPONENT IMPORTS*/
-import ParticleJS from './ParticleJS.js';
+import ParticleJS from '../../effects/ParticleJS.js';
 
 /*COMPONENT IMPORTS */
-import Footer from './Footer.js';
-import Header from './navigation/Header.js';
-import PasswordGenerator from '../components/PasswordGenerator.js';
-import FileEncrypter from '../components/FileEncrypter.js'
-import Card from '../components/Card.js'
-import ToolsPageText from "../assets/ToolsPageAssets/text/ToolsPageText.json"
+import Footer from '../../navigation/footer/Footer.js';
+import Header from '../../navigation/header/Header.js';
+import PasswordGenerator from './password_generator/PasswordGenerator.js';
+import FileEncrypter from './file_encrypter/FileEncrypter.js'
+import Card from '../../cards/Card.js'
+import ToolsPageText from "../../../assets/ToolsPageAssets/text/ToolsPageText.json"
 
 /* STYLE IMPORTS*/
-import '../styles/ToolsPage.css'
+import './ToolsPage.css'
 
 export default class ToolsPage extends Component {
     render() {

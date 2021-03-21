@@ -1,0 +1,31 @@
+/*
+ __   ___  __   __   __     __  ___    __       
+|  \ |__  /__` /  ` |__) | |__)  |  | /  \ |\ | 
+|__/ |___ .__/ \__, |  \ | |     |  | \__/ | \| 
+             
+-------------------------------------------------
+
+This is the top level CSS for the application. 
+
+Primarily responsible for defining the
+- background color of every page 
+- default font style 
+- default height of each page 
+
+Default font is "Fira Sans Normal" from Google Fonts. The import below is required 
+for the font to work. If the import fails for whatever reason, the font will 
+become sans-serif instead. 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+body,
+html,
+#root,
+.App {
+	margin: 0;
+	padding: 0;
+	background-color: #232741;
+	height: 100%;
+	font-family: 'Fira Sans', sans-serif;
+}

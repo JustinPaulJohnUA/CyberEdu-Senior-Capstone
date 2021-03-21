@@ -1,9 +1,9 @@
 import React from 'react'
 
 /*SYTLE IMPORTS*/
-import '../styles/FileEncrypter.css'
+import './FileEncrypter.css'
 
-/*COMPONENT IMPORTS */
+/* LIBRARY COMPONENT IMPORTS */
 import CryptoJS from 'crypto-js'
 
 /* 
