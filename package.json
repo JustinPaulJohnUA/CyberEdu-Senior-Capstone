@@ -11,6 +11,8 @@
     "@tippyjs/react": "^4.2.0",
     "crypto-js": "^4.0.0",
     "filereader": "^0.10.3",
+    "font-awesome": "^4.7.0",
+    "framer-motion": "^4.0.0",
     "netlify-cli": "^3.10.1",
     "particlesjs": "^2.2.3",
     "react": "^17.0.1",
