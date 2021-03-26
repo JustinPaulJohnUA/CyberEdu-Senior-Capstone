@@ -1,7 +1,14 @@
+/*
+    Author: Justin John 
+    Project: ISTA 498 Capstone
+    Date: Jan 2021 - May 2021
+*/
+
 import React, { useState, useEffect } from 'react'
 
 /*LIBRARY COMPONENT IMPORTS*/
 import SearchField from "react-search-field";
+import { motion } from 'framer-motion'
 
 /*COMPONENT IMPORTS */
 import Footer from '../../../components/navigation/footer/Footer.js';
@@ -16,6 +23,57 @@ import text from '../../../assets/AssociationsAssets/text/AssociationsText.json'
 /* STYLE IMPORTS*/
 import './AssociationsPage.css';
 
+/*
+    Description:
+        - Describes the layout and functionality of the Associations Page 
+
+    States:
+        - searchInput (string): Represents the user's search input 
+        - currentAssociations (list of <Card /> objects): Represents a list of the currently-displayed <Card /> objects based on user's input
+
+    Effects:
+        - After the searchInput state has changed, the showSearchResults() function will be called
+
+    showSearchResults():
+        - Responsible for setting what <Card /> objects should be displayed based on user search input
+        - If the search bar has no input in it, currentAssociations will be set equal to the entire Associations <Card /> list
+        - If the search bar contains at least character, that character (or string of characters) will be compared against every
+          Association Card's title-property. 
+        - If the search-string can be found within an Association Card's title-property, it will be added to a list called newCurrentAssociations
+        - Once all Association Card's title-properties have been compared, the currentAssociations state will be set to newCurrentAssociations
+
+    Functionality:
+        - Users will begin typing into the search bar, where calls to showSearchResults() will be made
+        - As the user types, the page will update based on the results from showSearchResults()
+    
+*/
+
+const wrapperAnimation = {
+    initial: {
+        opacity: 0,
+        transition: {
+            duration: 0.7,
+            ease: [0.87, 0, 0.13, 1],
+            staggerChildren: 0.2
+        }
+    },
+    show: {
+        opacity: 1,
+        transition: {
+            duration: 0.7,
+            ease: [0.87, 0, 0.13, 1],
+            staggerChildren: 0.2
+        }
+    },
+    exit: {
+        opacity: 0,
+        transition: {
+            duration: 0.7,
+            ease: [0.87, 0, 0.13, 1],
+            staggerChildren: 0.2
+        }
+    }
+}
 
 export default function AssociationsPage() {
     var [searchInput, setSearchInput] = useState('');
@@ -146,23 +204,27 @@ export default function AssociationsPage() {
     }
 
     return (
-            <div>
+            <motion.div
+                variants={wrapperAnimation}
+                animate="show"
+                initial="initial"
+                exit="exit">
                 <Header />
-                <div className="associations-page-wrapper">
+                <motion.div className="associations-page-wrapper" variants={wrapperAnimation}>
                     <div className="associations-page-title-wrapper">
                         <img id="associations-page-title-icon" src={binocularIcon} />
                         <div>Cybersecurity Associations</div>
                     </div>
 
-                <SearchField onChange={ (e) => setSearchInput(e) } className="associations-search" placeholder="Search..."/>
+                    <SearchField onChange={ (e) => setSearchInput(e) } className="associations-search" placeholder="Search..."/>
 
-                    <div className="associations-page-content-wrapper">
-                    {[...currentAssociations]}
-                    </div>
-                </div>
+                    <motion.div className="associations-page-content-wrapper">
+                        {[...currentAssociations]}
+                    </motion.div>
+                </motion.div>
                 <Footer />
                 <ParticleJS />
-            </div>
+            </motion.div>
     )
 }
 

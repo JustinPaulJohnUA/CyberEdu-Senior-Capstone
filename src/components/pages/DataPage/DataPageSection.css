@@ -1,3 +1,4 @@
+/*Targets the entire DataPageSection wrapper*/
 .data-page-content {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -15,6 +16,7 @@
 	border-radius: 15px;
 }
 
+/*Targets the title of the DataPageSection*/
 .data-page-content-title {
 	grid-area: data-page-content-title;
 	color: white;
@@ -25,16 +27,20 @@
 	padding: 1%;
 	border-radius: 15px 15px 0 0;
 }
+
+/*Targets the image wrapper of the DataPageSection*/
 .data-page-content-graph {
 	grid-area: data-page-content-graph;
 	border-right: solid #3e404f 4px;
 	text-align: center;
 }
 
+/*Targets the image of the DataPageSection directly*/
 .data-page-content-graph img {
 	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/*Targets the description of the DataPageSection directly*/
 #data-page-content-description {
 	grid-area: data-page-content-description;
 	color: white;

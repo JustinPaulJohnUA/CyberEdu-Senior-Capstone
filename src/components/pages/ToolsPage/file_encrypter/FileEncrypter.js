@@ -5,18 +5,7 @@ import './FileEncrypter.css'
 
 /* LIBRARY COMPONENT IMPORTS */
 import CryptoJS from 'crypto-js'
-
-/* 
-This applet is functional, but it needs to be refactored badly and could 
-probably be re-written to take advantage of react-state in order to help 
-reduce the amount of lines. 
-
-Has been tested very slighly for edge-cases, but not extensively, so there 
-are probably some bugs that haven't been yet. 
-
-Either way, its functional and styled (for the most part), so I will consider
-refactoring and testing once everything else has been completed.
-*/
+import { motion } from 'framer-motion'
 
 export default function FileEncrypter() {
 
@@ -193,26 +182,46 @@ export default function FileEncrypter() {
         currentStep = 'encrypt-decrypt-wrapper'
     }
 
+    const buttonAnimations = {
+        hover: {
+            scale: 1.2
+        },
+        initial: { opacity: 0 },
+        show: {
+            opacity: 1,
+            transition: {
+                duration: 0.7,
+                ease: [0.87, 0, 0.13, 1],
+                staggerChildren: 0.1
+            }
+        }
+}
+
     return (
         <div id="encrypter-applet-content-wrapper">
             <div style={{display:"flex", justifyContent: "space-between"}}>
                 <h2 className="encrypter-applet-content-title">AES Encrypter</h2>
-                <button id="restartButton" style={{
-                    width: "100px",
-                    height: "40px",
-                    verticalAlign: "center",
-                    backgroundColor: "#3b3b98",
-                    border: "none",
-                    color: "white",
-                    borderRadius: "5px"
-                }} onClick={(e) => restartEncryption(e)}>Restart</button>
+                <motion.button
+                    id="restartButton"
+                    style={{
+                        width: "100px",
+                        height: "40px",
+                        verticalAlign: "center",
+                        backgroundColor: "#3b3b98",
+                        border: "none",
+                        color: "white",
+                        borderRadius: "5px"
+                    }}
+                    onClick={(e) => restartEncryption(e)}
+                    whileHover="hover"
+                    variants={buttonAnimations}>Restart</motion.button>
             </div>
             
 
             <div id="encrypt-decrypt-wrapper" className="overlay">
                 <h3 id="encrypt-decrypt-title">Select an Option</h3>
-                <button onClick={ (e) => showUpload(e) } id="encrypt">Encrypt</button>
-                <button onClick={ (e) => showUpload(e) } id="decrypt">Decrypt</button>
+                <motion.button onClick={ (e) => showUpload(e) } id="encrypt" whileHover="hover" variants={buttonAnimations}>Encrypt</motion.button>
+                <motion.button onClick={ (e) => showUpload(e) } id="decrypt" whileHover="hover" variants={buttonAnimations}>Decrypt</motion.button>
             </div>
 
             <div id="file-upload-wrapper">
@@ -224,18 +233,18 @@ export default function FileEncrypter() {
                 <h3 id="password-title">Enter your Secret Password</h3>
                 <input onChange={(e) => setPassword(e)} id="password-input" type="text" />
 
-                <button onClick={ (e) => showEncryptionDownload(e)} id="encrypt-button">Encrypt</button>
+                <motion.button onClick={ (e) => showEncryptionDownload(e)} id="encrypt-button" whileHover="hover" variants={buttonAnimations}>Encrypt</motion.button>
             </div>
 
             <div id='decrypt-input-wrapper'>
                 <h3>Enter your Decryption Key</h3>
                 <input onChange={(e) => setDecryptionKey(e)} id="decryption-key-input" type="text" />
-                <button onClick={(e) => showDecryptionDownload(e)} id="decrypt-button">Decrypt</button>
+                <motion.button onClick={(e) => showDecryptionDownload(e)} id="decrypt-button" whileHover="hover" variants={buttonAnimations}>Decrypt</motion.button>
             </div>
             
             <div id="download-wrapper" className="overlay">
                 <h3 id="download-title">Download your File</h3>
-                <a onClick={ (e) => downloadFile(e) } href="#" id="download-link">Download</a>
+                <motion.a onClick={ (e) => downloadFile(e) } href="#" id="download-link" whileHover="hover" variants={buttonAnimations}>Download</motion.a>
             </div>
 
         </div>

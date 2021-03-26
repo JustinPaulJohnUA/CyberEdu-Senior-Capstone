@@ -2,6 +2,9 @@ import React, { Component, useRef } from 'react'
 
 /*STYLE IMPORTS*/
 import './PasswordGenerator.css';
+import 'font-awesome/css/font-awesome.min.css';
+
+import { motion } from "framer-motion";
 
 export default function PasswordGenerator() {
     const randomFunction = {
@@ -48,7 +51,6 @@ export default function PasswordGenerator() {
         var generatedPassword = '';
         const typesCount = lower + upper + number + symbol;
         const typesArr = [{ lower }, { upper }, { number }, { symbol }].filter( item => Object.values(item)[0]);
-        console.log(typesCount)
 
         if (typesCount === 0) {
             return ''
@@ -62,7 +64,7 @@ export default function PasswordGenerator() {
         }
 
         const finalPassword = generatedPassword.slice(0, length)
-        console.log(finalPassword)
+
         return finalPassword
     }
 
@@ -70,10 +72,15 @@ export default function PasswordGenerator() {
         <div className="password-generator-applet-main">
             <h2 className="password-generator-applet-title">Password Generator</h2>
             <div className="result-container">
-                <span ref={ passwordResultRef } className="generated-password"></span>
-                <button className="clipboard-button">
-                    <i>clip</i>
-                </button>
+                <motion.span
+                    ref={passwordResultRef}
+                    className="generated-password"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    ></motion.span>
+                {/* <button className="clipboard-button">
+                    <i class="fa fa-clipboard"></i>
+                </button> */}
             </div>
             <div className="settings">
                 <div className="setting">

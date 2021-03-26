@@ -29,7 +29,7 @@ export default class ParticleJS extends Component {
         return (
                 <Particles 
                 id="particles-js" 
-                style={{width: "100%", height: "100%"}}
+                style={{width: "100%", height: "100vh"}}
                 params={{
                     particles: {
                         number: {

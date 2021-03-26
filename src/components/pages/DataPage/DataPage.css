@@ -1,3 +1,4 @@
+/*Targets the wrapper of the entire data page*/
 #data-page-wrapper {
 	position: absolute;
 	top: 10%;
@@ -9,16 +10,19 @@
 	overflow-y: scroll;
 }
 
-#data-page-wrapper::-webkit-scrollbar {
+/*Targets the scrollbar of the data page wrapper*/
+/* #data-page-wrapper::-webkit-scrollbar {
 	width: 24px;
-}
+} */
 
-#data-page-wrapper::-webkit-scrollbar-track {
+/*Targets the scrollbar track of the data page wrapper*/
+/* #data-page-wrapper::-webkit-scrollbar-track {
 	background-color: #4f67ff;
 	border-radius: 5px;
-}
+} */
 
-#data-page-wrapper::-webkit-scrollbar-thumb {
+/*Targets the scrollbar thumbs of the data page wrapper*/
+/* #data-page-wrapper::-webkit-scrollbar-thumb {
 	background: #314aeb;
 	border-radius: 5px;
-}
+} */

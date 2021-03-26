@@ -1,4 +1,6 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch, useLocation, useHistory } from 'react-router-dom';
+
 
 /*COMPONENT IMPORTS */
 import Home from './components/pages/HomePage/Home.js';
@@ -13,28 +15,36 @@ import LearnMalware from './components/pages/LearnPages/LearnMalware.js';
 /* STYLE IMPORTS */
 import './App.css';
 
+/*LIBRARY COMPONENT IMPORTS*/
+import { AnimatePresence, motion } from "framer-motion";
+
 
 /*
   This is the top-level component for this react application. 
   Routes for page navigation are defined here via react-router-dom
   Links to hit each route will be defined within the respective component
 */
+
+
+
+
 function App() {
+  const location = useLocation();
   return (
-    <Router>
       <div className="App">
-        <Switch>
-          <Route exact path="/"><Home /></Route>
-          <Route exact path="/learn"><LearnHome /></Route>
-          <Route exact path="/learn/phishing"><LearnPhishing /></Route>
-          <Route exact path="/learn/social-engineering"><LearnSocialEngineering /></Route>
-          <Route exact path="/learn/malware"><LearnMalware /></Route>
-          <Route exact path="/tools"><ToolsPage /></Route>
-          <Route exact path="/associations"><AssociationsPage /></Route>
-          <Route exact path="/data"><DataPage /></Route>
-        </Switch>
+        <AnimatePresence exitBeforeEnter>
+            <Switch location={location} key={location.pathname}>
+              <Route exact path="/"><Home /></Route>
+              <Route exact path="/learn"><LearnHome /></Route>
+              <Route exact path="/learn/phishing"><LearnPhishing /></Route>
+              <Route exact path="/learn/social-engineering"><LearnSocialEngineering /></Route>
+              <Route exact path="/learn/malware"><LearnMalware /></Route>
+              <Route exact path="/tools"><ToolsPage /></Route>
+              <Route exact path="/associations"><AssociationsPage /></Route>
+              <Route exact path="/data"><DataPage /></Route>
+            </Switch>
+          </AnimatePresence>
       </div>
-    </Router>
   );
 }
 

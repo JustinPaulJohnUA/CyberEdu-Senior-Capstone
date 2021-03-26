@@ -1,3 +1,4 @@
+/*Targets the wrapper div of the entire associations page component*/
 .associations-page-wrapper {
 	position: absolute;
 	top: 9%;
@@ -9,6 +10,7 @@
 	overflow-y: scroll;
 }
 
+/*Targets the wrapper div of the association page's title div (contains the page icon and title text)*/
 .associations-page-title-wrapper {
 	width: 70%;
 	display: flex;
@@ -17,6 +19,7 @@
 	justify-content: center;
 }
 
+/*Targets the title text div of the association page's title wrapper*/
 .associations-page-title-wrapper div {
 	font-size: 72px;
 	color: white;
@@ -24,34 +27,38 @@
 	margin-bottom: 2%;
 }
 
+/*Targets the association page's icon directly*/
 #associations-page-title-icon {
 	width: 175px;
 	height: 175px;
 }
 
-.associations-page-search-wrapper {
-	color: white;
-	width: 60%;
-	height: 60px;
-	background-color: rgba(114, 113, 113, 0.404);
-}
-
+/*Targets the wrapper that holds all the <Card /> objects*/
 .associations-page-content-wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
 
+/*
+	- Targets the div of each <Card /> object directly
+	- This is what adds the spacing around each card object
+*/
 .associations-page-content-wrapper div {
 	margin: 1%;
 }
 
+/*
+	- Targets the search field component
+	- This is the className to be used as stated in the react-search-field docs: https://www.npmjs.com/package/react-search-field
+*/
 .react-search-field {
 	display: flex;
 	width: 80%;
 	border-radius: 5px;
 }
 
+/*Targets the input div of the react-search-field component*/
 .react-search-field-input {
 	padding: 0 !important;
 }

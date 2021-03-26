@@ -6,6 +6,8 @@
 
 import React from 'react'
 
+import { motion } from 'framer-motion'
+
 /*STYLE IMPORTS*/
 import './Card.css'
 
@@ -21,9 +23,21 @@ import './Card.css'
         - link (URL string): URL should point to a cyber-security related website
         - description (string): this string should describe the what the purpose of what props.link redirects to 
 */
+
+const cardAnimation = {
+    hover: {
+        scale: 1.2
+    }
+}
+
+
+
 export default function Card(props) {
     return (
-        <div className="card-wrapper">
+        <motion.div
+            className="card-wrapper"
+            whileHover="hover"
+            variants={cardAnimation}>
             <h3 className="card-title">{ props.title }</h3>
             <a href={ props.link } className="card-image-wrapper">
                 <img src={props.img} className="card-image" />
@@ -31,7 +45,7 @@ export default function Card(props) {
             <div className="card-description-wrapper">
                 <p className="card-description">{ props.description }</p>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

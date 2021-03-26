@@ -26,9 +26,13 @@
 	justify-self: center;
 	width: 90%;
 	height: 90%;
-	/* background-color: #314aeb;
-	border-radius: 5%;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+	overflow-y: scroll;
+	scrollbar-width: none;
+}
+
+.topic-menu-wrapper::-webkit-scrollbar {
+	width: 0;
+	height: 0;
 }
 
 .topic-menu {
@@ -157,7 +161,18 @@
 #shoulder-surfing-content h4,
 #tailgating-content h4,
 #dumpster-diving-content h4,
-#watering-hole-content {
+#watering-hole-content h4,
+#virus-content h4,
+#worms-content h4,
+#logic-bombs-content h4,
+#backdoor-content h4,
+#trojans-content h4,
+#rats-content h4,
+#keyloggers-content h4,
+#spyware-content h4,
+#adware-content h4,
+#bots-content h4,
+#rootkits-content h4 {
 	text-align: center;
 	margin: 1% 0;
 }

@@ -40,6 +40,7 @@ import './Accordion.css';
         - scroll-height is used in place of height in order to give it a "transition" animation when clicked
 
 */
+
 export default function Accordion(props) {
 
     const [setActive, setActiveState] = useState("");
@@ -54,7 +55,8 @@ export default function Accordion(props) {
     }
 
     return (
-        <div className="accordion-wrapper">
+        <div
+            className="accordion-wrapper">
             <button className={`accordion ${setActive}`} onClick={toggleAccordion}>{props.title}</button>
             <div ref={content} style={{ maxHeight: `${setHeight}` }} className="panel">
                 <a href={props.anchors.description}>Description</a>

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 /*LIBRARY COMPONENT IMPORTS*/
 import ParticleJS from '../../effects/ParticleJS.js';
+import { motion } from 'framer-motion';
 
 /*COMPONENT IMPORTS */
 import Footer from '../../navigation/footer/Footer.js';
@@ -13,22 +14,119 @@ import LearnInPageNav from '../LearnPages/LearnInPageNav.js';
 import hackerIcon from '../../../assets/hacker.svg';
 
 /*STYLE IMPORTS*/
-import './LearnPhishing.css'
+import './LearnPage.css'
 
 /*TEXT IMPORTS*/
 import text from '../../../assets/LearnAssets/text/SocialEngineeringText.json';
 
+const wrapperAnimation = {
+    initial: {
+        opacity: 0,
+        transition: {
+            duration: 0.7,
+            ease: [0.87, 0, 0.13, 1],
+            staggerChildren: 0.2
+        }
+    },
+    show: {
+        opacity: 1,
+        transition: {
+            duration: 0.7,
+            ease: [0.87, 0, 0.13, 1],
+            staggerChildren: 0.2
+        }
+    },
+    exit: {
+        transition: {
+            duration: 0.7,
+            ease: [0.87, 0, 0.13, 1],
+            staggerChildren: 0.2
+        }
+    }
+}
+
+const linkAnimations = {
+    initial: { opacity: 0, y: -1000 },
+    show: {
+        opacity: 1,
+        y: 0,
+        duration: 0.7,
+        ease: [0.87, 0, 0.13, 1],
+        transition: {
+            type: "spring",
+            stiffness: 25,
+        }
+    },
+    exit: {
+        opacity: 0,
+        y: -700,
+        duration: 0.7,
+        ease: [0.87, 0, 0.13, 1],
+        transition: {
+            type: "spring",
+            stiffness: 25,
+        }
+    }
+}
+
+const navAnimations = {
+    initial: { opacity: 0, x: -1000 },
+    show: {
+        opacity: 1,
+        x: 0,
+        transition: {
+            type: "spring",
+            stiffness: 25,
+        },
+        staggerChildren: 0.1
+    },
+    exit: {
+        opacity: 0,
+        x: -1000,
+        duration: 0.7,
+        ease: [0.87, 0, 0.13, 1],
+        transition: {
+            type: "spring",
+            stiffness: 25,
+        }
+    }
+}
+
+const categoriesAnimations = {
+    initial: { opacity: 0 },
+    show: {
+        opacity: 1,
+        duration: 0.7,
+        ease: [0.87, 0, 0.13, 1],
+        transition: {
+            type: "spring",
+            stiffness: 25,
+        }
+    },
+    exit: { opacity: 0 }
+}
+
 export default class LearnSocialEngineering extends Component {
     render() {
         return (
-            <div>
+            <motion.div
+                variants={wrapperAnimation}
+                animate="show"
+                initial="initial"
+                exit="exit">
                 <Header />
                 <LearnInPageNav />
                 <div className="topic-content-container">
-                    <div className="topic-icon">
+
+                    <motion.div
+                        className="topic-icon"
+                        variants={linkAnimations}>
                         <img className="topic-icon" src={ hackerIcon }/>
-                    </div>
-                    <div className="topic-menu-wrapper">
+                    </motion.div>
+
+                    <motion.div
+                        className="topic-menu-wrapper"
+                        variants={navAnimations}>
                         <div className="topic-menu">
                             <h3>Navigation</h3>
                             <Accordion title="Impersonation" anchors={{
@@ -57,8 +155,11 @@ export default class LearnSocialEngineering extends Component {
                                 mitigation: "#watering-hole-mitigation"
                             }}/>
                         </div>
-                    </div>
-                    <div className="topic-content-wrapper">
+                    </motion.div>
+
+                    <motion.div
+                        className="topic-content-wrapper"
+                        variants={categoriesAnimations}>
                         <h2 className="topic-content-title">Social Engineering</h2>
                         <div className="topic-content">
 
@@ -141,13 +242,12 @@ export default class LearnSocialEngineering extends Component {
                                     <p className="text-content">{ text.waterholes.mitigation }</p>
                                 </div>
                             </div>
-
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
                 <Footer />
                 <ParticleJS />
-            </div>
+            </motion.div>
         )
     }
 }
