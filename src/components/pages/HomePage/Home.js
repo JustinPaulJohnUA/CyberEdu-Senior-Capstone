@@ -24,6 +24,7 @@ import 'tippy.js/themes/translucent.css';
 /*COMPONENT IMPORTS */
 import Footer from '../../navigation/footer/Footer.js';
 import Tooltip from '../../tooltips/Tooltip.js'
+import Header from '../../navigation/header/Header.js';
 
 /*ASSET IMPORTS */
 import spywareIcon from '../../../assets/spyware.svg';
@@ -85,6 +86,7 @@ export default function Home() {
 
     return (
         <motion.div className='wrapper'>
+            <Header />
             <motion.div
                 className="grid-container"
                 variants={wrapperAnimation}

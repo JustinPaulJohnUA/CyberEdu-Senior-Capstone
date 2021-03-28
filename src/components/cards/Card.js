@@ -39,7 +39,7 @@ export default function Card(props) {
             whileHover="hover"
             variants={cardAnimation}>
             <h3 className="card-title">{ props.title }</h3>
-            <a href={ props.link } className="card-image-wrapper">
+            <a href={ props.link } target="_blank" className="card-image-wrapper">
                 <img src={props.img} className="card-image" />
             </a>
             <div className="card-description-wrapper">

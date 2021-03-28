@@ -53,7 +53,7 @@ const wrapperAnimation = {
 
 const appletTextAnimations = {
     initial: {
-        x: -1000,
+        x: -900,
         opacity: 0
     },
     show: {

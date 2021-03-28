@@ -1,0 +1,51 @@
+.news-wrapper {
+	color: white;
+	/* overflow: auto; */
+	height: 60px;
+	mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+	padding: 2% 0;
+}
+
+#news-link {
+	color: white;
+}
+
+.carousel {
+	width: 90%;
+	margin: auto 5%;
+	height: 100%;
+	margin-right: 0;
+	overflow-y: scroll;
+}
+
+.carousel-root {
+	outline: none;
+	width: 80%;
+	height: 100%;
+	overflow-y: auto;
+	float: right;
+}
+
+.carousel-slider {
+	margin: 0;
+}
+
+.carousel.carousel-slider {
+	position: relative;
+	margin: auto 10%;
+	overflow: hidden;
+}
+
+.slider li {
+	padding: 0 5%;
+	height: 100%;
+}
+
+#news-feed-wrapper {
+	height: 100%;
+	width: 80%;
+}
+
+.dropdown {
+	width: 20%;
+}
