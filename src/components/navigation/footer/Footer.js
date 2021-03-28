@@ -36,6 +36,9 @@ export default class Footer extends Component {
                     <h2 className="site-map-header">Site Map</h2>
                     <ul className="site-map-ul">
                         <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li>
                             <Link to="/tools">Tools</Link>
                         </li>
                         <li>
@@ -53,13 +56,20 @@ export default class Footer extends Component {
                 <div className="licenses-wrapper">
                     <h2 className="licenses-header">Licenses &amp; Credit</h2>
                     <ul className="licenses-ul">
-                        <li>Credit Page</li>
+                        <li>
+                            <a href="https://docs.google.com/document/d/1A-04AmYePv-Q7hfNMs_pA4zfDAxoYIg8eN7KM-oPYSI/edit?usp=sharing" target="_blank">Credit &amp; Resources Used</a>
+                        </li>
                     </ul>
                 </div>
 
                 <div className="copyright-wrapper">
                     <h2 className="copyright-header">Group Members</h2>
                     <ul className="copyright-ul">
+                        <li>
+                            <Link to="/about-us">
+                                About the Team
+                            </Link>
+                        </li>
                         <li>Christine Heaton</li>
                         <li>Justin John</li>
                         <li>Chris Huerta</li>

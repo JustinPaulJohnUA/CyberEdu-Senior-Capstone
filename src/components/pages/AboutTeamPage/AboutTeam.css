@@ -1,0 +1,52 @@
+#about-us-content-wrapper {
+	top: 8%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	height: 90%;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	overflow-y: scroll;
+}
+
+.about-us-section-desc {
+	color: white;
+	width: 60%;
+	font-size: 20px;
+	margin: 1% auto;
+}
+
+.about-us-section {
+	width: 90%;
+	margin: 1% auto;
+	padding-bottom: 1%;
+	color: white;
+	border-bottom: rgba(128, 128, 128, 0.5) 5px solid;
+}
+
+.about-us-section-content p {
+	font-size: 18px;
+	padding: 0 10%;
+	letter-spacing: 2px;
+}
+
+.about-us-section img {
+	width: 20%;
+	height: 20%;
+	border-right: solid #3e404f 4px;
+}
+
+.about-us-section h2 {
+	text-align: left;
+	font-size: 36px;
+	color: white;
+	background-color: #3e404f;
+	padding: 1%;
+	margin-bottom: 0;
+}
+
+.about-us-section-content {
+	display: flex;
+	background-color: #3e404f83;
+}

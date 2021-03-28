@@ -51,7 +51,13 @@ export default function DataPageSection(props) {
         <motion.div className="data-page-content" variants={sectionAnimations}>
             <h2 className="data-page-content-title">{ props.title }</h2>
             <div className="data-page-content-graph">
-               <img src={props.img} />
+                <a href={props.img} target="_blank">
+                    <motion.img
+                        whileHover={{
+                        scale: 1.2
+                    }}
+                        src={props.img} />
+                </a>
             </div>
             <div id="data-page-content-description">
                 { props.description}

@@ -11,6 +11,7 @@ import AssociationsPage from './components/pages/AssociationsPage/AssociationsPa
 import DataPage from './components/pages/DataPage/DataPage.js';
 import LearnSocialEngineering from './components/pages/LearnPages/LearnSocialEngineering.js';
 import LearnMalware from './components/pages/LearnPages/LearnMalware.js';
+import AboutTeam from './components/pages/AboutTeamPage/AboutTeam.js';
 
 /* STYLE IMPORTS */
 import './App.css';
@@ -24,9 +25,6 @@ import { AnimatePresence, motion } from "framer-motion";
   Routes for page navigation are defined here via react-router-dom
   Links to hit each route will be defined within the respective component
 */
-
-
-
 
 function App() {
   const location = useLocation();
@@ -42,6 +40,7 @@ function App() {
               <Route exact path="/tools"><ToolsPage /></Route>
               <Route exact path="/associations"><AssociationsPage /></Route>
               <Route exact path="/data"><DataPage /></Route>
+              <Route exact path="/about-us"><AboutTeam /></Route>
             </Switch>
           </AnimatePresence>
       </div>

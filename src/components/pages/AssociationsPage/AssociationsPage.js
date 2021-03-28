@@ -210,7 +210,7 @@ export default function AssociationsPage() {
                 initial="initial"
                 exit="exit">
                 <Header />
-                <motion.div className="associations-page-wrapper" variants={wrapperAnimation}>
+                <motion.div className="associations-page-wrapper">
                     <div className="associations-page-title-wrapper">
                         <img id="associations-page-title-icon" src={binocularIcon} />
                         <div>Cybersecurity Associations</div>

@@ -97,7 +97,7 @@ export default function Home() {
                 <motion.div
                     className="LogoIcon"
                     variants={linkAnimations}>
-                    <h1 className="homepageHeading">Cyber Edu</h1>
+                    <h1 className="homepageHeading">CyberWise</h1>
                     <motion.img src={spywareIcon} />
                 </motion.div>
 

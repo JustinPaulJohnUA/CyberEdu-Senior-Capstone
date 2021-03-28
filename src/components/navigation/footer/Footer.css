@@ -71,6 +71,13 @@
 	text-align: center;
 }
 
+.site-map-ul a,
+.licenses-ul a,
+.copyright-ul a,
+.about-us-ul a {
+	color: white;
+}
+
 /* The following styles below are used to assign respective classNames from the Footer component to their place within 
 	the grid area.*/
 .footer-logo-wrapper {
