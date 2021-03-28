@@ -87,17 +87,17 @@
 
 .site-map-wrapper {
 	grid-area: site-map-wrapper;
-	justify-self: center;
+	justify-self: end;
 }
 
 .licenses-wrapper {
 	grid-area: licenses-wrapper;
-	justify-self: center;
+	justify-self: end;
 }
 
 .copyright-wrapper {
 	grid-area: copyright-wrapper;
-	justify-self: center;
+	justify-self: end;
 }
 
 .about-us-wrapper {

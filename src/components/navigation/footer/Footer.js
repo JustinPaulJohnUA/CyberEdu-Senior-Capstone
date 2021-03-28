@@ -63,24 +63,13 @@ export default class Footer extends Component {
                 </div>
 
                 <div className="copyright-wrapper">
-                    <h2 className="copyright-header">Group Members</h2>
+                    <h2 className="copyright-header">About Us</h2>
                     <ul className="copyright-ul">
                         <li>
                             <Link to="/about-us">
-                                About the Team
+                                Meet the Team
                             </Link>
                         </li>
-                        <li>Christine Heaton</li>
-                        <li>Justin John</li>
-                        <li>Chris Huerta</li>
-                        <li>Hisham Alhindawi</li>
-                    </ul>
-                </div>
-
-                <div className="about-us-wrapper">
-                    <h2 className="about-us-header">About Us</h2>
-                    <ul className="about-us-ul">
-                        <li>Satement of Use Page</li>
                     </ul>
                 </div>
             </div>
