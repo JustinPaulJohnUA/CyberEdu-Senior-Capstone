@@ -42,7 +42,7 @@ export default class Footer extends Component {
                             <Link to="/tools">Tools</Link>
                         </li>
                         <li>
-                            <Link to="/learning">Learning</Link>
+                            <Link to="/learn">Learning</Link>
                         </li>
                         <li>
                             <Link to="/associations">Explore</Link>

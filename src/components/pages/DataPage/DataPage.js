@@ -115,8 +115,8 @@ export default class DataPage extends Component {
                         <DataPageSection title={"Cybercrime in Healthcare"} img={HealthcareGraph} description={ DataText.healthcare.description}/>
                         <DataPageSection title={"Cybercrime Among Individuals"} img={IndividualsGraph} description={ DataText.individuals.description}/>
                         <DataPageSection title={"Cybercrime Among Mutliple Industries"} img={IndustriesGraph} description={DataText.industries.description} />
-                        <DataPageSection title={"Total Distribution of Cybercrime"} img={ServicesGraph} description={ DataText.public.description}/>
-                        <DataPageSection title={"Total Distribution of Targets"} img={DistributionGraph} description={DataText.targets.description} />
+                        <DataPageSection title={"Total Distribution Among Public Services"} img={ServicesGraph} description={ DataText.public.description}/>
+                        <DataPageSection title={"Total Distribution of Cybercrime"} img={DistributionGraph} description={DataText.targets.description} />
                         <DataPageSection title={"Total Distribution of Targets"} img={TargetsGraph} description={ DataText.targets.description}/>
                     </motion.div>
                 </div>
