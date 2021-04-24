@@ -9,6 +9,9 @@ import avatar from '../../../assets/avatar-placeholder.gif'
 
 import { motion } from 'framer-motion'
 
+import Justin from './pictures/justin.jpg'
+import Christine from './pictures/christine.jpg'
+
 const wrapperAnimation = {
     initial: {
         opacity: 0,
@@ -84,7 +87,7 @@ export default function AboutTeam() {
                 <motion.div className="about-us-section">
                     <h2>Justin John</h2>
                     <div className="about-us-section-content">
-                        <img src={avatar} />
+                        <img src={Justin} />
                         <p>
                             <h3>Roles: Web Developer, Editor</h3>
                             My name is Justin John. I am a senior ISTA student, with a minor in Computer
@@ -141,7 +144,7 @@ export default function AboutTeam() {
                 <motion.div className="about-us-section">
                     <h2>Christine Heaton</h2>
                     <div className="about-us-section-content">
-                        <img src={avatar}/>
+                        <img src={Christine}/>
                         <p>
                             <h3>Roles: Content Writer</h3>
                             I am a senior in ISTA with a dual major in Japanese, graduating in May

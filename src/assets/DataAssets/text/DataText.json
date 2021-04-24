@@ -1,27 +1,78 @@
 {
-    "kaspersky-map": "Placeholder Text",
+    "kaspersky-map": "A real-time cyber threat map provided by Kaspersky Labs - A reputable cybersecurity and anti-virus provider. Interact with the legends on the map to filter for different types of attacks or filter by location. ",
     "education": {
         "img": "../graphs/Distribution of Attacks Among Education.png",
-        "description": "Chris 1"
-    },
-    "healthcare": {
-        "img": "../graphs/Distribution of Attacks Among Healthcare.png",
-        "description": "Chris 2"
+        "whatis": "Education includes: School districts, Private schools, colleges/universities (including students)",
+        "whatwere": "<ul><li>Malware (55% overall)<\/li><ul><li>Data breaches (Student data being stolen or altered), Cyber attacks (usually cutting off internet access)<\/li><\/ul><li>Fraud (37% overall)<\/li><ul><li>Account hijacking (students, teachers, administrators), DDOS (districts and colleges hit with DDOS attacks)<\/li><\/ul><\/ul>"
     },
     "individuals": {
         "img": "../graphs/Distribution of Attacks Among Individuals.png",
-        "description": "Chris 3"
-    },
-    "industries": {
-        "img": "../graphs/Distribution of Attacks Among Multiple Industries.png",
-        "description": "Chris 4"
+        "whatis": "Everyday citizens and the information they generate everyday. Including: purchases, movement tracking, social media, etc.",
+        "whatwere": "<ul><li>malware (61% overall)</li><ul><li>ransomware publishing unauthorized world medical data, targeted attacks (mostly centered around vaccinations and otherworld health events)</li></ul><li>fraud (44% overall)</li><ul><li>information being stolen from various internet spots, massive cyber attacks centered around individuals with compromisedidentities. </li></ul><li>phishing (9% overall)</li><ul><li>pages stealing login credentials, emails and advertisements set to sell fake or incorrect products</li></ul></ul>"
     },
     "public": {
         "img": "../graphs/Distribution_of_Cybercrimes.png",
-        "description": "Chris 5"
+        "whatis": "Police departments, Public healthcare providers, Fire departments, Social Services, Public transportation",
+        "whatwere": "<ul><li>malware (34% overall)</li><ul><li>local/state/federal governements hit by ransomware, stealing information that has not yet been released to the public</li></ul><li>fraud (40% overall)</li><ul><li>ddos attacks compromising various electronic devices, cyber-criminals compromising information of businesses associatedwith larger companies (microsoft, apple)</li></ul></ul>"
     },
-    "targets": {
-        "img": "../graphs/Distribution_of_Targets.png",
-        "description": "Chris 6"
+    "energy": {
+        "img": "../graphs/Distribution of Attacks Among Energy.PNG",
+        "whatis": "Electricity companies, Natural gas (refiners and distributors), Natural energy companies (solar, wind, etc.)",
+        "whatwere": "<ul><li>malware (45% overall)</li><ul><li>data leaks (various accounts, ransomware), cyberattacks (attempting to cut off access to customers)</li></ul><li>fraud (50% overall)</li><ul><li>targeted attacks (cyber-espionage, financial theft), account hijacking (employee/administration accounts compromised)</li></ul></ul>"
+    },
+    "entertainment": {
+        "img": "../graphs/Distribution of Attacks Among Entertainment & Recreation.PNG",
+        "whatis": "Video game companies, Movie producers, Local and national parks, Streaming services (Netflix, Hulu), Gatherings (festivals, concerts)",
+        "whatwere": "<ul><li>malware (32% overall)</li><ul><li>ransomware breaches, data breaches and leaks of accounts/files</li></ul><li>fraud (62% overall)</li><ul><li>ddos (various online events being disrupted or canceled due to ddos attack), account hijacking (actors, companies, social media attacks)</li></ul></ul>"
+    },
+    "fintech": {
+        "img": "../graphs/Distribution of Attacks Among Fintech.PNG",
+        "whatis":"Much like normal financial services, but more centered around technology, such as virtual wallet applications (mostly crypto currency)",
+        "whatwere": "<ul><li>fraud (63% overall)</li><ul><li>account breaches of both users and developers (usually stealing sums of crypto currency), information leak of mostlyillegal activity relating to crypto. </li></ul></ul>"
+    },
+    "financial": {
+        "img": "../graphs/Distribution of Attacks Among Financial Services.PNG",
+        "whatis": "Banks, investment companies (regular and crypto currency), Insurance companies (life, auto, home, etc.)",
+        "whatwere": "<ul><li>malware (47% overall)</li><ul><li>trojan horses spying/stealing data, ransomware leaking data of users as well as company information</li></ul><li>fraud (44% overall)</li><ul><li>account hijackings (users having information and money taken)</li></ul></ul>"
+    },
+    "food": {
+        "img": "../graphs/Distribution of Attacks Among Food Services.PNG",
+        "whatis": "Restaurant chains (sit down and fast food), Farmers and food distributors, Grocery stores",
+        "whatwere": "<ul><li>malware (38% overall)</li><ul><li>ransomware attacks stealing confidential information, data breaches stealing user information</li></ul><li>fraud (56% overall)</li><ul><li>ddos attacks causing disruptions in supply routes, accounts being compromised</li></ul></ul>"
+    },
+    "healthcare": {
+        "img": "../graphs/Distribution of Attacks Among Healthcare.png",
+        "whatis": "Hospitals, doctors in various practices, manufacturers of medicine and other drugs, health organizations (CDC, WHO)",
+        "whatwere": "<ul><li>malware (61% overall)</li><ul><li>ransomware publishing unauthorized world medical data, targeted attacks (mostly centered around vaccinations and otherworld health events)</li></ul><li>fraud (38% overall)</li><ul><li>medical information unintentionally left out and stolen, cyberattacks leading to a breach in patient information</li></ul></ul>"
+    },
+    "info": {
+        "img": "../graphs/Distribution of Attacks Among Information & Communication.PNG",
+        "whatis": "Social media (posts, chats), Telephone/text communication companies (Verizon, AT&T), Communication apps (WhatsApp, GroupMe, etc.), TV and radio stations",
+        "whatwere": "<ul><li>malware (31% overall)</li><ul><li>ransomware attacks compromising vital information (news stories, classified information), data breaches stealing userinformation to spam them. </li></ul><li>fraud (60% overall)</li><ul><li>various official social media account compromised (mostly government accounts), ddos attacks to prevent informationspread</li></ul></ul>"
+    },
+    "manufacturing": {
+        "img": "../graphs/Distribution of Attacks Among Manufacturing.PNG",
+        "whatis": "Creation and distribution of various items for customer consumption. Examples: tech and computer manufacturers, auto industry, military production, household item production",
+        "whatwere": "<ul><li>malware (65% overall)</li><ul><li>cyberattacks and trojan horses intended to stop the supply and manufacture of certain items as well as to stealinformation</li></ul><li>fraud (31% overall)</li><ul><li>employee and user information stolen, attacks that stole information regarding new technology and sales</li></ul></ul>"
+    },
+    "multi": {
+        "img": "../graphs/Distribution of Attacks Among Multiple Industries.png",
+        "whatis": "Many of the different types of industries talked about on this page that fell victim to the same attack from a certain group or individual",
+        "whatwere": "<ul><li>malware (36% overall)</li><ul><li>cyberattacks and trojan horses intended to stop the supply and manufacture of certain items as well as to stealinformation</li></ul><li>fraud (40% overall)</li><ul><li>ddos attacks compromising various electronic devices, cyber-criminals compromising information of businesses associatedwith larger companies (microsoft, apple)</li></ul><li>phishing (20% overall)</li><ul><li>information about various companies being leaked, leading to massive phishing attempts among users and workers in theindustry</li></ul></ul>"
+    },
+    "science": {
+        "img": "../graphs/Distribution of Attacks Among Science & Technology.png",
+        "whatis": "Companies and organizations that center around innovation in both technology and science in general. Companies/Organizations like IBM, research labs, etc.",
+        "whatwere": "<ul><li>malware (48% overall)</li><ul><li>ransomware taking information about unfinished technologies and medical advancements, information about top officialsstolen</li></ul><li>fraud (46% overall)</li><ul><li>hackers from various sectors attempting to get information regarding new medicines, spread of misinformation fromfraudulent leaks</li></ul></ul>"
+    },
+    "transportation": {
+        "img": "../graphs/Distribution of Attacks Among Transportation.PNG",
+        "whatis": "Distribution of items or people across a city, state, country or the world. This includes land transportation (trucks, cars), air transportation (planes) and water transportation (boats)",
+        "whatwere": "<ul><li>malware (41% overall)</li><ul><li>ransomware stealing information regarding logistics of travel, other cyber crimes to try and disrupt the transportationof vital good and services to a certain area</li></ul><li>fraud (44% overall)</li><ul><li>attempting to steal user information to redirect items purchased, airline passengers and workers information beingstolen to plot possible terrorist attacks around the world</li></ul></ul>"
+    },
+    "retail": {
+        "img": "../graphs/Distribution of Attacks Among Wholesale & Retail.PNG",
+        "whatis": "Creation and distribution of various goods in order to be sold and resold. Wholesale usually from large companies buying direct from the manufacturer where retail is more centered around companies selling these goods to individuals at higher prices.",
+        "whatwere": "<ul><li>malware (62% overall)</li><ul><li>retailers hit by ransomware to get exclusive items and steal customer information and orders, malware used to stealpayment information as the user is checking out. </li></ul><li>fraud (29% overall)</li><ul><li>accounts being hijacked in order to make false purchases and steal payment information, ddos in attempts to stop theflow of supply and demand of certain essential goods. </li></ul></ul>"
     }
 }

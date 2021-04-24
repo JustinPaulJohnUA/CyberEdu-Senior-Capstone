@@ -60,7 +60,10 @@ export default function DataPageSection(props) {
                 </a>
             </div>
             <div id="data-page-content-description">
-                { props.description}
+                <h3>What is { props.type }?</h3>
+                {props.whatis}
+                <h3>What were a majority of the attacks?</h3>
+                <div dangerouslySetInnerHTML={{__html:props.whatwere}}></div>
             </div>
         </motion.div>
     )

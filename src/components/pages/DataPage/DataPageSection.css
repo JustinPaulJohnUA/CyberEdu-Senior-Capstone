@@ -38,6 +38,7 @@
 /*Targets the image of the DataPageSection directly*/
 .data-page-content-graph img {
 	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 75%;
 }
 
 /*Targets the description of the DataPageSection directly*/
@@ -45,5 +46,6 @@
 	grid-area: data-page-content-description;
 	color: white;
 	font-size: 24px;
-	text-align: center;
+	text-align: left;
+	padding: 0 5%;
 }
